@@ -22,18 +22,14 @@ int main() {
     printBoard(board);
 
     double eval = evaluation(board, BLACK_STONE);
-    loginfo("eval=",eval);
-//    initCostMaps();
-//    functionInfoMap.find("1")->second.addTotalTime(1.5);
-//    functionInfoMap.find("1")->second.increaseCall();
-//    cout << functionInfoMap.find("1")->second << endl;
-
+    loginfo("main","eval=",eval);
 
 //    tic(); // Total time;
 
+    testCountAndElapsedTime();
 
 //    printToc(); // Total time;
-    testCountAndElapsedTime();
+
     printSummary();
 
     return 0;

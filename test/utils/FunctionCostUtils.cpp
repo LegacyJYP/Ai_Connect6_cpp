@@ -26,8 +26,9 @@ bool FunctionInfo::isPrint() {
     return print;
 }
 
-void FunctionInfo::offPrint() {
-    print = false;
+FunctionInfo FunctionInfo::setPrint(bool boolean) {
+    print = boolean;
+    return *this;
 }
 
 ostream& operator<<(ostream& os, const FunctionInfo& fi)
@@ -37,17 +38,21 @@ ostream& operator<<(ostream& os, const FunctionInfo& fi)
     return os;
 }
 
-// --------------------------------------------------------- //
+// ----------------------------------------------------------
 
 void initCostMaps() {
-//    FunctionInfo functionInfo = FunctionInfo();
-//    functionInfo.addTotalTime(10);
-//    cout << functionInfo << endl;
-//    functionInfoMap.insert(pair<string, FunctionInfo>("1", functionInfo));
+    functionInfoMap.insert(pair<string, FunctionInfo>(
+            AI::HEURISTIC::EVALUATION_evaluation_key,
+            FunctionInfo().setPrint(
+                    AI::HEURISTIC::EVALUATION_evaluation_printFlag
+            )
+    ));
 
     functionInfoMap.insert(pair<string, FunctionInfo>(
             AI::HEURISTIC::EVALUATION_evaluation_key,
-            FunctionInfo()
+            FunctionInfo().setPrint(
+                    AI::HEURISTIC::EVALUATION_evaluation_printFlag
+            )
     ));
 }
 

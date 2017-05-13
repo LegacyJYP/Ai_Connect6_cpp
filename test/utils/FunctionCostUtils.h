@@ -12,7 +12,6 @@
 using namespace std;
 
 
-
 class FunctionInfo {
 private:
     int call;
@@ -22,14 +21,14 @@ public:
     void increaseCall();
     void addTotalTime(double duration);
     bool isPrint();
-    void offPrint();
+    FunctionInfo setPrint(bool);
     FunctionInfo() : call(0), totalTime(0), print(true) {};
     friend ostream& operator<<(ostream& os, const FunctionInfo& dt);
 };
-
 
 
 void initCostMaps();
 void functionCallStack(string functionKey);
 void functionTic(string functionKey);
 void functionToc(string functionKey);
+void printSummary();
