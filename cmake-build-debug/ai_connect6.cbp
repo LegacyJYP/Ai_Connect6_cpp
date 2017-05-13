@@ -112,6 +112,12 @@
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/Sort.h">
 			<Option target="ai_connect6"/>
 		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/Node.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/Node.h">
+			<Option target="ai_connect6"/>
+		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/utils/BoardUtils.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>

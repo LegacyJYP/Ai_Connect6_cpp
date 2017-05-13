@@ -11,3 +11,5 @@ namespace FILTERED_BY_HEURISTIC {
     const double THRESHOLD_PERSENTAGE = 0.1;
     const int THRESHOLD_NUMBER = 50;
 }
+
+const int ROOT_DEPTH = 0;

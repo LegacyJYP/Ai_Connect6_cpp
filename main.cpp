@@ -11,6 +11,8 @@
 #include "test/utils/LogUtils.h"
 #include "ai/policy/EffectiveRange.h"
 #include "ai/policy/NextStonePairs.h"
+#include "ai/search/Node.h"
+#include "consts/CONFIG.h"
 
 
 using namespace std;
@@ -26,7 +28,12 @@ int main() {
 
     int stoneType = BLACK_STONE;
     vector<vector<vector<int>>> nextStonePairs = nextStonePairsByPolicy(board, stoneType);
-    printStonePairList(nextStonePairs);
+//    printStonePairList(nextStonePairs);
+
+    // --------------------------------------------------------------------------------------
+
+    Node root = Node(board, stoneType, ROOT_DEPTH);
+    root.extend(nextStonePairs);
 
 
     // -----------------------------------------
