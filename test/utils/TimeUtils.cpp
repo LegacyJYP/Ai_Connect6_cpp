@@ -10,22 +10,23 @@
 #include <map>
 //#include<chrono>
 
+
 using namespace std;
 using namespace chrono;
 
 static time_point<system_clock> start;
 
-static map<int, time_point<system_clock>> START_TIMES;
+static map<string, time_point<system_clock>> START_TIMES;
 
 
 void tic(){
     start = system_clock::now();
 }
 
-void tic(int key) {
-    map<int, time_point<system_clock>>::iterator it = START_TIMES.find(key);
+void tic(string key) {
+    map<string, time_point<system_clock>>::iterator it = START_TIMES.find(key);
     if (it == START_TIMES.end()) { // element not found
-        START_TIMES.insert(pair<int, time_point<system_clock>>(key, system_clock::now()));
+        START_TIMES.insert(pair<string, time_point<system_clock>>(key, system_clock::now()));
 //        log("tic START_TIMES insert");
     } else {
         it->second = system_clock::now();
@@ -41,7 +42,7 @@ double toc() {
     return elapsed_seconds.count();
 }
 
-double toc(int key) {
+double toc(string key) {
     time_point<system_clock> end = system_clock::now();
 
     time_point<system_clock> startByKey = START_TIMES.find(key)->second;
@@ -52,11 +53,9 @@ double toc(int key) {
 }
 
 void printToc() {
-    cout << toc();
-    nln;
+//    loginfo("printToc",toc());
 }
 
-void printToc(int key) {
-    cout << toc(key);
-    nln;
+void printToc(string key) {
+//    loginfo("printToc key ", toc(key));
 }

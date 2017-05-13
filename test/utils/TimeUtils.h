@@ -6,9 +6,14 @@
 #define AI_CONNECT6_TIMEUTILS_H
 
 #endif //AI_CONNECT6_TIMEUTILS_H
+
+#include <string>
+
+using namespace std;
+
 void tic();
-void tic(int key);
+void tic(string key);
 double toc();
-double toc(int key);
+double toc(string key);
 void printToc();
-void printToc(int key);
+void printToc(string key);

@@ -12,60 +12,7 @@
 #include "../Samples.h"
 
 
-static map<int, double> ELAPSED_TIME_INFUNC;
-static map<int, int>    CALL_COUNT_INFUNC;
-
-
-
 map<string, FunctionInfo> functionInfoMap;
-
-
-
-void initCostMaps() {
-    FunctionInfo functionInfo = FunctionInfo();
-    functionInfo.addTotalTime(10);
-//    cout << functionInfo << endl;
-    functionInfoMap.insert(pair<string, FunctionInfo>("1", functionInfo));
-
-    ELAPSED_TIME_INFUNC.insert(
-            pair<int,double>(
-                    AI::HEURISTIC::EVALUATION_evaluation_key, 0
-            )
-    );
-
-    CALL_COUNT_INFUNC.insert(
-            pair<int,int>(
-                    AI::HEURISTIC::EVALUATION_evaluation_key, 0
-            )
-    );
-}
-
-void functionCallStack(int functionKey) {
-    if(ELAPSED_TIME_INFUNC.size() == 0) {
-        log("functionCallStack initCostMaps");
-        initCostMaps();
-    }
-    CALL_COUNT_INFUNC.find(functionKey)->second++;
-//    cout << CALL_COUNT_INFUNC.find(functionKey)->second;
-//    nln();
-}
-
-void functionTic(int functionKey) {
-    tic(functionKey);
-}
-
-void functionToc(int functionKey) {
-    ELAPSED_TIME_INFUNC.find(functionKey)->second += toc(functionKey);
-//    cout << "functionToc "<< toc(functionKey) << '\n';
-    ELAPSED_TIME_INFUNC.find(functionKey)->second += toc(functionKey);
-}
-
-void printSummary() {
-    int key = AI::HEURISTIC::EVALUATION_evaluation_key;
-    cout << "ELAPSED_TIME "<< ELAPSED_TIME_INFUNC.find(AI::HEURISTIC::EVALUATION_evaluation_key)->second << '\n';
-    cout << "CALL_COUNT "<< CALL_COUNT_INFUNC.find(AI::HEURISTIC::EVALUATION_evaluation_key)->second << '\n';
-}
-
 
 void FunctionInfo::increaseCall() {
     call++;
@@ -75,9 +22,58 @@ void FunctionInfo::addTotalTime(double duration) {
     totalTime += duration;
 }
 
+bool FunctionInfo::isPrint() {
+    return print;
+}
+
+void FunctionInfo::offPrint() {
+    print = false;
+}
+
 ostream& operator<<(ostream& os, const FunctionInfo& fi)
 {
     os << "콜횟수 : " << fi.call << endl;
     os << "소요시간 : " << fi.totalTime;
     return os;
+}
+
+// --------------------------------------------------------- //
+
+void initCostMaps() {
+//    FunctionInfo functionInfo = FunctionInfo();
+//    functionInfo.addTotalTime(10);
+//    cout << functionInfo << endl;
+//    functionInfoMap.insert(pair<string, FunctionInfo>("1", functionInfo));
+
+    functionInfoMap.insert(pair<string, FunctionInfo>(
+            AI::HEURISTIC::EVALUATION_evaluation_key,
+            FunctionInfo()
+    ));
+}
+
+void functionCallStack(string functionKey) {
+    if(functionInfoMap.size() == 0) {
+        loginfo("functionCallStack initCostMaps");
+        initCostMaps();
+    }
+    functionInfoMap.find(functionKey)->second.increaseCall();
+}
+
+void functionTic(string functionKey) {
+    tic(functionKey);
+}
+
+void functionToc(string functionKey) {
+    functionInfoMap.find(functionKey)->second.addTotalTime(toc(functionKey));
+//    loginfo("functionToc ", toc(functionKey));
+}
+
+void printSummary() {
+    map<string, FunctionInfo>::iterator i;
+    for (i = functionInfoMap.begin(); i != functionInfoMap.end(); i++) {
+        if (i->second.isPrint()) {
+            cout << "함수이름 : " << i->first << endl;
+            cout << i->second << endl;
+        }
+    }
 }

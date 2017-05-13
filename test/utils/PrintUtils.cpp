@@ -11,7 +11,7 @@
 using namespace std;
 
 void printBoard(std::vector<std::vector<int>> &board) {
-    log("printBoard");
+//    log("printBoard");
     std::vector <std::string> boardString = board2string(board);
 
     printStringList(boardString);
@@ -21,6 +21,6 @@ void printStringList(std::vector<std::string> &boardString)
 {
     for (int i = 0; i < boardString.size(); i++)
     {
-        log("PrintUtils/printBoard: ", boardString[i]);
+//        log("PrintUtils/printBoard: ", boardString[i]);
     }
 }

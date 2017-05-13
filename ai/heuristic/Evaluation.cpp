@@ -11,11 +11,8 @@
 
 
 double evaluation(std::vector<std::vector<int>> &board, int stoneType) {
-//    functionCallStack(AI::HEURISTIC::EVALUATION_evaluation);
-//    cout << "evaluation_count=" << evaluation_count << '\n';
     functionCallStack(AI::HEURISTIC::EVALUATION_evaluation_key);
     functionTic(AI::HEURISTIC::EVALUATION_evaluation_key);
-//    log("evaluation ", AI::HEURISTIC::EVALUATION_evaluation_key);
 
     double evaluation = 0;
 
@@ -23,14 +20,11 @@ double evaluation(std::vector<std::vector<int>> &board, int stoneType) {
         evaluation = 1;
     }
 
-    if (stoneType == BLACK_STONE)
+    if (stoneType == WHITE_STONE)
     {
-        functionToc(AI::HEURISTIC::EVALUATION_evaluation_key);
-        return evaluation;
-    }
-    else
-    {
-        functionToc(AI::HEURISTIC::EVALUATION_evaluation_key);
         return -evaluation;
     }
+
+    functionToc(AI::HEURISTIC::EVALUATION_evaluation_key);
+    return evaluation;
 }

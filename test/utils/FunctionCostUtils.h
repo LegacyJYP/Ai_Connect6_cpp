@@ -17,14 +17,19 @@ class FunctionInfo {
 private:
     int call;
     double totalTime;
+    bool print;
 public:
     void increaseCall();
     void addTotalTime(double duration);
-    FunctionInfo() : call(0), totalTime(0) {};
+    bool isPrint();
+    void offPrint();
+    FunctionInfo() : call(0), totalTime(0), print(true) {};
     friend ostream& operator<<(ostream& os, const FunctionInfo& dt);
 };
 
+
+
 void initCostMaps();
-void functionCallStack(int functionName);
-void functionTic(int functionKey);
-void functionToc(int functionKey);
+void functionCallStack(string functionKey);
+void functionTic(string functionKey);
+void functionToc(string functionKey);
