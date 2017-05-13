@@ -3,7 +3,7 @@
 //
 
 #include "Node.h"
-#include "../heuristic/Evaluation.h"
+#include "../heuristic/JYP/Evaluation_JYP.h"
 #include "../../test/utils/LogUtils.h"
 #include "../../test/utils/PrintUtils.h"
 #include "../../consts/GAME_BOARD.h"

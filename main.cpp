@@ -3,7 +3,7 @@
 #include <map>
 #include "test/Samples.h"
 #include "test/utils/PrintUtils.h"
-#include "ai/heuristic/Evaluation.h"
+#include "ai/heuristic/JYP/Evaluation_JYP.h"
 #include "consts/GAME_BOARD.h"
 #include "test/utils/TimeUtils.h"
 #include "test/utils/LOG_BY_EACHFUNCTION.h"
@@ -13,6 +13,7 @@
 #include "ai/policy/NextStonePairs.h"
 #include "ai/search/Node.h"
 #include "consts/CONFIG.h"
+#include "ai/heuristic/onefile/Evaluation_ONEFILE.h"
 
 
 using namespace std;
@@ -22,9 +23,16 @@ void testCountAndElapsedTime();
 int main() {
     extern map<string,FunctionInfo> functionInfoMap;
 
-    vector<vector<int>> board = getSample(1);
+    vector<vector<int>> board = getSample(2);
+
+//    double eval = ONEFILE::evaluation_onefile(board, BLACK_STONE);
 //    printBoard(board);
-//    printBoard(effectiveBoard);
+//    loginfo("main","main","eval=",eval); // eval 단독테스트
+
+
+    printBoard(board);
+     //--------------------------------------------------------------------------------------
+
 
     int stoneType = BLACK_STONE;
     vector<vector<vector<int>>> nextStonePairs = nextStonePairsByPolicy(board, stoneType);

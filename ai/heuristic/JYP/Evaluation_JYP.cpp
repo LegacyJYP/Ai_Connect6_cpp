@@ -3,11 +3,11 @@
 //
 
 #include <iostream>
-#include "Evaluation.h"
-#include "../../test/utils/PrintUtils.h"
-#include "../../test/utils/LOG_BY_EACHFUNCTION.h"
-#include "../../consts/GAME_BOARD.h"
-#include "../../test/utils/FunctionCostUtils.h"
+#include "Evaluation_JYP.h"
+#include "../../../test/utils/PrintUtils.h"
+#include "../../../test/utils/LOG_BY_EACHFUNCTION.h"
+#include "../../../consts/GAME_BOARD.h"
+#include "../../../test/utils/FunctionCostUtils.h"
 
 
 double evaluation(std::vector<std::vector<int>> &board, int stoneType) {

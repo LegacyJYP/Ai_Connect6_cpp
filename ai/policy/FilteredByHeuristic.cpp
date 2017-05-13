@@ -4,25 +4,24 @@
 
 #include "FilteredByHeuristic.h"
 #include "../utils/BoardUtils.h"
-#include "../heuristic/Evaluation.h"
 #include "../../test/utils/LogUtils.h"
 #include "../../test/utils/PrintUtils.h"
 #include "Sort.h"
 #include "../utils/VectorUtils.h"
 #include "../../consts/GAME_BOARD.h"
+#include "../heuristic/onefile/Evaluation_ONEFILE.h"
 
 vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int>> effectiveList, int stoneType) {
     vector<double> evalList;
 
     for (auto stonePoint : effectiveList) {
-//        loginfo("FilteredByHeuristic","afterBoard","putStone");
+        loginfo("FilteredByHeuristic","afterBoard","putStone");
 
-//        printBoard(board);
         vector<vector<int>> afterBoard = putStonePoint(board,stonePoint,stoneType);
-
+//        printStonePoint(stonePoint);
 //        printBoard(afterBoard);
 
-        double eval = evaluation(afterBoard, stoneType);
+        double eval = ONEFILE::evaluation_onefile(afterBoard, stoneType);
         evalList.push_back(eval); // todo 메모리 leak 확인
 //        loginfo("FilteredByHeuristic","filterByHeuristic","eval=",eval);
     }
@@ -48,6 +47,9 @@ vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int
 //        loginfo("FilteredByHeuristic","filterByHeuristic","effectiveListVec.at(sortedIdx[X])=",effectiveListVec.at(sortedIdx[i])[X]);
 //        loginfo("FilteredByHeuristic","filterByHeuristic","effectiveListVec.at(sortedIdx[Y])=",effectiveListVec.at(sortedIdx[i])[Y]);
         filteredList[i] = effectiveListVec.at(sortedIdx[i]);
+        loginfo("FilteredByHeuristic","printBoard(afterBoard);","sorted ith=",i);
+        vector<vector<int>> afterBoard = putStonePoint(board, filteredList[i], stoneType);
+        printBoard(afterBoard);
 //        loginfo("FilteredByHeuristic","filterByHeuristic","after filteredList = effectiveList[sortedidx]");
 //        loginfo("FilteredByHeuristic","filterByHeuristic","filteredList[i][X]",filteredList[i][X]);
 //        loginfo("FilteredByHeuristic","filterByHeuristic","filteredList[i][Y]",filteredList[i][Y]);
