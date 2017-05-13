@@ -13,3 +13,12 @@ const int BLACK_STONE = 1;
 const int WHITE_STONE = 2;
 const int WALL_STONE = 5;
 
+const int BOARD_SIZE = 19;
+
+// fillBoardAroundPoint
+const int EFFECTIVE_RANGE = 3;
+const int EFFECTIVE_POSITION = 1;
+const int NOT_AVAILABLE_POSITION = 0;
+
+const int X = 0;
+const int Y = 0;

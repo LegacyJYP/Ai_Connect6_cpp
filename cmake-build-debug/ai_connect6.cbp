@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/cmake-build-debug"/>
+				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/cmake-build-debug"/>
+				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/cmake-build-debug"/>
+				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ai_connect6">
-				<Option output="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/cmake-build-debug/ai_connect6" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/cmake-build-debug"/>
+				<Option output="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/ai_connect6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 ai_connect6"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 ai_connect6"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ai_connect6/fast">
-				<Option output="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/cmake-build-debug/ai_connect6" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/cmake-build-debug"/>
+				<Option output="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/ai_connect6" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,65 +75,77 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 ai_connect6/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 ai_connect6/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/jaeyoung/Google\ 드라이브/Yeap/Jaeyoung/ai_connect6/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/ai/heuristic/Evaluation.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/Evaluation.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/ai/heuristic/Evaluation.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/Evaluation.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/consts/GAME_BOARD.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/EffectiveRange.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/main.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/EffectiveRange.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/Samples.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/NextStonePairs.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/Samples.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/NextStonePairs.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/BoardUtils.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/consts/GAME_BOARD.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/BoardUtils.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/main.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/FunctionCostUtils.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/Samples.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/FunctionCostUtils.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/Samples.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/LOG_BY_EACHFUNCTION.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/BoardUtils.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/LogUtils.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/BoardUtils.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/LogUtils.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/FunctionCostUtils.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/PrintUtils.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/FunctionCostUtils.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/PrintUtils.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/LOG_BY_EACHFUNCTION.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/TimeUtils.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/LogUtils.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/TimeUtils.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/LogUtils.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/CMakeLists.txt">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/PrintUtils.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/PrintUtils.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/TimeUtils.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/TimeUtils.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

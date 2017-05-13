@@ -9,6 +9,7 @@
 #include <iostream>
 #include "../../consts/GAME_BOARD.h"
 #include "PrintUtils.h"
+#include "LogUtils.h"
 
 
 using namespace std;
@@ -54,4 +55,85 @@ std::vector<std::string> board2string(std::vector<std::vector<int>> &board)
     }
 
     return boardString;
+}
+
+
+vector<vector<int>> boardCloneZeros(vector<vector<int>> board)
+{
+    int row = board.size();
+    int col = board[0].size();
+
+    vector<vector<int>> effectiveBoard(row, vector<int>(col, NONE_STONE));
+//
+//    for (int i = 0; i < row; i++) {
+//        for (int j = 0; j < col; j++) {
+//            board[i][j] = ctoi(boardString[i].at(j));
+//        }
+//    }
+
+    return effectiveBoard;
+}
+
+vector<vector<int>> boardClone(vector<vector<int>> board) {
+    int row = board.size();
+    int col = board[0].size();
+
+    vector<vector<int>> cloneBoard(row, vector<int>(col));
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            cloneBoard[i][j] = board[i][j];
+        }
+    }
+
+    return cloneBoard;
+}
+
+void fillBoardAroundPoint(vector<vector<int>>& board, int x, int y) {
+    int row = board.size();
+    int col = board[0].size();
+
+    int minX = std::max(x - (EFFECTIVE_RANGE-1), 0);
+    int maxX = std::min(x + (EFFECTIVE_RANGE-1), row - 1);
+    int minY = std::max(y - (EFFECTIVE_RANGE-1),0);
+    int maxY = std::min(y + (EFFECTIVE_RANGE-1), col - 1);
+
+//    loginfo("BoardUtils/fillBoardArroundPoint");
+    //        log.info("BoardUtils/fillBoardAroundPoint: before");
+    //        printBoard(board);
+    //        log.info("BoardUtils/fillBoardAroundPoint: x,y=[{}],[{}]",x,y);
+    for (int i = minX;i <= maxX; i++)
+    {
+        for (int j = minY; j <= maxY; j++)
+        {
+            //                log.info("BoardUtils/fillBoardAroundPoint: i,j=[{}],[{}]",i,j);
+            board[i][j] = EFFECTIVE_POSITION;
+        }
+    }
+
+    //        log.info("BoardUtils/fillBoardAroundPoint: after");
+    //        printBoard(board);
+}
+
+std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType)
+{
+    std::vector<std::vector<int>> result = boardClone(board);
+
+    for (auto stonePoint : stonePoints)
+    {
+        result[stonePoint[X]][stonePoint[Y]] = stoneType;
+    }
+
+    return result;
+}
+
+std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType)
+{
+    std::vector<std::vector<int>> result = boardClone(board);
+
+    for (auto stonePoint : stonePoints)
+    {
+        result[stonePoint[X]][stonePoint[Y]] = stoneType+2;
+    }
+
+    return result;
 }

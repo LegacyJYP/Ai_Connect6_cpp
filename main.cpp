@@ -9,6 +9,8 @@
 #include "test/utils/LOG_BY_EACHFUNCTION.h"
 #include "test/utils/FunctionCostUtils.h"
 #include "test/utils/LogUtils.h"
+#include "ai/policy/EffectiveRange.h"
+#include "ai/policy/NextStonePairs.h"
 
 
 using namespace std;
@@ -19,16 +21,24 @@ int main() {
     extern map<string,FunctionInfo> functionInfoMap;
 
     vector<vector<int>> board = getSample(1);
-    printBoard(board);
+//    printBoard(board);
+//    printBoard(effectiveBoard);
 
-    double eval = evaluation(board, BLACK_STONE);
-    loginfo("main","eval=",eval);
+    int stoneType = BLACK_STONE;
+    list<vector<vector<int>>> nextStonePairs = nextStonePairsByPolicy(board, stoneType);
+    printStonePairList(nextStonePairs);
 
-//    tic(); // Total time;
 
-    testCountAndElapsedTime();
+    // -----------------------------------------
 
-//    printToc(); // Total time;
+//    double eval = evaluation(board, BLACK_STONE);
+//    loginfo("main","eval=",eval);
+
+    tic(); // Total time;
+
+//    testCountAndElapsedTime();
+
+    printToc(); // Total time;
 
     printSummary();
 
@@ -36,9 +46,9 @@ int main() {
 }
 
 void testCountAndElapsedTime() {
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 900000; ++i) {
         vector<vector<int>> board = getSample(1);
-        printBoard(board);
+//        printBoard(board);
 
         double eval = evaluation(board, BLACK_STONE);
     }

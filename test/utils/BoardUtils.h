@@ -11,3 +11,8 @@ std::vector<std::string> board2string(std::vector<std::vector<int>> &board);
 vector<vector<int>> string2board(vector<string> boardString);
 int ctoi(char c);
 char itoc(int i);
+vector<vector<int>> boardCloneZeros(vector<vector<int>> board);
+void fillBoardAroundPoint(vector<vector<int>>& board, int x, int y);
+
+std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType);
+std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType);
