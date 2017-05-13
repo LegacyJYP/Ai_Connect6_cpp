@@ -6,7 +6,9 @@
 #include <iostream>
 #include "PrintUtils.h"
 #include "BoardUtils.h"
+#include "LogUtils.h"
 
+using namespace std;
 
 void printBoard(std::vector<std::vector<int>> &board) {
     log("printBoard");
@@ -21,12 +23,4 @@ void printStringList(std::vector<std::string> &boardString)
     {
         log("PrintUtils/printBoard: ", boardString[i]);
     }
-}
-
-void log(string s) {
-    cout << s << '\n';
-}
-
-void log(string s1, string s2) {
-    cout << s1 << " " << s2 << '\n';
 }

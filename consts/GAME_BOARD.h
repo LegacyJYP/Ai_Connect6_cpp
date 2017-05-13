@@ -9,3 +9,7 @@
 
 
 const int NONE_STONE = 0;
+const int BLACK_STONE = 1;
+const int WHITE_STONE = 2;
+const int WALL_STONE = 5;
+

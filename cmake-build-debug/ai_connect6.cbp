@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/ai/heuristic/Evaluation.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/ai/heuristic/Evaluation.h">
+			<Option target="ai_connect6"/>
+		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/consts/GAME_BOARD.h">
 			<Option target="ai_connect6"/>
 		</Unit>
@@ -100,10 +106,31 @@
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/BoardUtils.h">
 			<Option target="ai_connect6"/>
 		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/FunctionCostUtils.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/FunctionCostUtils.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/LOG_BY_EACHFUNCTION.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/LogUtils.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/LogUtils.h">
+			<Option target="ai_connect6"/>
+		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/PrintUtils.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/PrintUtils.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/TimeUtils.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/test/utils/TimeUtils.h">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/ai_connect6/CMakeLists.txt">

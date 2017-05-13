@@ -17,11 +17,11 @@ static vector<vector<string>> VAR_SAMPLES(0, vector<string>(19, ""));
 
 vector<vector<int>> getSample(int idx)
 {
-    cout << "getSample idx=" << idx << "\n";
+//    cout << "getSample idx=" << idx << "\n";
 
     if (!VAR_INIT_SAMPLE)
     {
-        cout << "getSample " << "!VAR_INIT_SAMPLE" << "\n";
+//        cout << "getSample " << "!VAR_INIT_SAMPLE" << "\n";
         initSamples();
         VAR_INIT_SAMPLE = true;
     }
@@ -57,7 +57,7 @@ void initSamples() {
 
     // 1
     VAR_SAMPLES.push_back({
-                                  "0000000000000000000",
+                                  "1000000000000000000",
                                   "2222222222222222222",
                                   "0000000000000000000",
                                   "0000000000001000000",
