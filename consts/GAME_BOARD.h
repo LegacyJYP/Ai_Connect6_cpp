@@ -21,4 +21,4 @@ const int EFFECTIVE_POSITION = 1;
 const int NOT_AVAILABLE_POSITION = 0;
 
 const int X = 0;
-const int Y = 0;
+const int Y = 1;

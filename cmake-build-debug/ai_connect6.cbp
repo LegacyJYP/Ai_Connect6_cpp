@@ -94,13 +94,49 @@
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/EffectiveRange.h">
 			<Option target="ai_connect6"/>
 		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/FilteredByHeuristic.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/FilteredByHeuristic.h">
+			<Option target="ai_connect6"/>
+		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/NextStonePairs.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/NextStonePairs.h">
 			<Option target="ai_connect6"/>
 		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/Sort.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/Sort.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/utils/BoardUtils.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/utils/BoardUtils.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/utils/StoneUtils.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/utils/StoneUtils.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/utils/VectorUtils.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/utils/VectorUtils.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/consts/CONFIG.h">
+			<Option target="ai_connect6"/>
+		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/consts/GAME_BOARD.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/consts/SCORE.h">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/main.cpp">
@@ -110,12 +146,6 @@
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/Samples.h">
-			<Option target="ai_connect6"/>
-		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/BoardUtils.cpp">
-			<Option target="ai_connect6"/>
-		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/BoardUtils.h">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/FunctionCostUtils.cpp">

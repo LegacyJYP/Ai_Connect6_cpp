@@ -6,7 +6,7 @@
 #include <iostream>
 #include <list>
 #include "PrintUtils.h"
-#include "BoardUtils.h"
+#include "../../ai/utils/BoardUtils.h"
 #include "LogUtils.h"
 #include "../../consts/GAME_BOARD.h"
 
@@ -31,7 +31,13 @@ void printStonePairList(list<vector<vector<int>>> &stonePairsList) {
         for (i = stonePairsList.begin(); i != stonePairsList.end(); i++) {
             printStonePair(*i);
         }
+}
 
+void printStonePairList(vector<vector<vector<int>>> &stonePairs) {
+    vector<vector<vector<int>>>::iterator i;
+    for (i = stonePairs.begin(); i != stonePairs.end(); i++) {
+        printStonePair(*i);
+    }
 }
 
 void printStonePair(vector<vector<int>> &stonePairs) {
@@ -43,13 +49,24 @@ void printStonePair(vector<vector<int>> &stonePairs) {
 
 void printStonePoint(vector<int> &stonePoint)
 {
+    loginfo("PrintUtils","printStonePoint");
     loginfo("printStonePoint", stonePoint[X], stonePoint[Y]);
 }
 
 void printStonePointList(list<vector<int>> printStonePointList) {
 //    loginfo("printStonePointList");
-    list<vector<int>>::iterator i;
-    for (i = printStonePointList.begin(); i != printStonePointList.end(); i++) {
+    for (list<vector<int>>::iterator i = printStonePointList.begin(); i != printStonePointList.end(); i++) {
         printStonePoint(*i);
     }
 }
+
+void printStonePointList(vector<vector<int>> printStonePointList) {
+    loginfo("PrintUtils","printStonePointList","printStonePointList.size()=",printStonePointList.size());
+    for (vector<vector<int>>::iterator i = printStonePointList.begin(); i != printStonePointList.end(); i++) {
+        printStonePoint(*i);
+    }
+}
+
+// void printBoardAfterPutStonePointList(board, list, stoneType);
+//    vector<vector<int>> afterBoard = putStonePoints(board,effectiveList, stoneType);
+//    printBoard(afterBoard);

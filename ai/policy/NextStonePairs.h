@@ -12,4 +12,4 @@
 
 using namespace std;
 
-list<vector<vector<int>>> nextStonePairsByPolicy(vector<vector<int>> board, int stoneType);
+vector<vector<vector<int>>> nextStonePairsByPolicy(vector<vector<int>> board, int stoneType);

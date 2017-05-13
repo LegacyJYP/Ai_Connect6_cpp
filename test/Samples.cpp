@@ -7,7 +7,7 @@
 #include <vector>
 
 #include "Samples.h"
-#include "utils/BoardUtils.h"
+#include "../ai/utils/BoardUtils.h"
 #include "utils/PrintUtils.h"
 
 using namespace std;
@@ -57,9 +57,9 @@ void initSamples() {
 
     // 1
     VAR_SAMPLES.push_back({
-                                  "1000000000000000000",
-                                  "2222222222222222222",
                                   "0000000000000000000",
+                                  "0000000000000000000",
+                                  "0010000000000000000",
                                   "0000000000001000000",
                                   "0000000000000000000",
                                   "0000000000000000000",

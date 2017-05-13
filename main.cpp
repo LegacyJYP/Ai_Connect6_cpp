@@ -25,7 +25,7 @@ int main() {
 //    printBoard(effectiveBoard);
 
     int stoneType = BLACK_STONE;
-    list<vector<vector<int>>> nextStonePairs = nextStonePairsByPolicy(board, stoneType);
+    vector<vector<vector<int>>> nextStonePairs = nextStonePairsByPolicy(board, stoneType);
     printStonePairList(nextStonePairs);
 
 

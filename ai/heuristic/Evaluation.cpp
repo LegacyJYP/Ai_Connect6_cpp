@@ -17,7 +17,15 @@ double evaluation(std::vector<std::vector<int>> &board, int stoneType) {
     double evaluation = 0;
 
     if (board[0][0] == BLACK_STONE) {
-        evaluation = 1;
+        evaluation = 90;
+    }
+
+    if (board[1][0] == BLACK_STONE) {
+        evaluation = 9;
+    }
+
+    if (board[0][1] == BLACK_STONE) {
+        evaluation = 900;
     }
 
     if (stoneType == WHITE_STONE)

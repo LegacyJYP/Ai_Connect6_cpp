@@ -8,8 +8,8 @@
 #include <cstdlib>
 #include <iostream>
 #include "../../consts/GAME_BOARD.h"
-#include "PrintUtils.h"
-#include "LogUtils.h"
+#include "../../test/utils/PrintUtils.h"
+#include "../../test/utils/LogUtils.h"
 
 
 using namespace std;
@@ -88,6 +88,17 @@ vector<vector<int>> boardClone(vector<vector<int>> board) {
     return cloneBoard;
 }
 
+vector<double> vectorClone(vector<double> origin) {
+    int len = origin.size();
+    vector<double> clone(len);
+
+    for (int i = 0; i < len; i++) {
+        clone[i] = origin[i];
+    }
+
+    return clone;
+}
+
 void fillBoardAroundPoint(vector<vector<int>>& board, int x, int y) {
     int row = board.size();
     int col = board[0].size();
@@ -114,7 +125,31 @@ void fillBoardAroundPoint(vector<vector<int>>& board, int x, int y) {
     //        printBoard(board);
 }
 
+std::vector<std::vector<int>> putStonePoint(std::vector<std::vector<int>> &board, std::vector<int> &stonePoint, int stoneType)
+{
+    std::vector<std::vector<int>> result = boardClone(board);
+
+    result[stonePoint[X]][stonePoint[Y]] = stoneType;
+
+    return result;
+}
+
+// 2stones
 std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType)
+{
+    std::vector<std::vector<int>> result = boardClone(board);
+
+    for (auto stonePoint : stonePoints)
+    {
+        result[stonePoint[X]][stonePoint[Y]] = stoneType;
+    }
+
+    return result;
+}
+
+
+// more than 2 stones
+std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::list<std::vector<int>> &stonePoints, int stoneType)
 {
     std::vector<std::vector<int>> result = boardClone(board);
 

@@ -4,8 +4,10 @@
 
 
 #include "EffectiveRange.h"
-#include "../../test/utils/BoardUtils.h"
+#include "../utils/BoardUtils.h"
 #include "../../consts/GAME_BOARD.h"
+#include "../../test/utils/LogUtils.h"
+#include "../../test/utils/PrintUtils.h"
 
 
 list<vector<int>> effectiveRange(vector<vector<int>> &board) {
@@ -22,14 +24,18 @@ list<vector<int>> effectiveRange(vector<vector<int>> &board) {
         }
     }
 
+    printBoard(effectiveBoard);
+
     list<vector<int>> effectiveList;
 //
     for (int i = 0; i < BOARD_SIZE; i++)
     {
         for (int j = 0; j < BOARD_SIZE; j++)
         {
-            if(board[i][j] == NONE_STONE && effectiveBoard[i][j] != EFFECTIVE_POSITION) {
-                effectiveList.push_back({i,j});
+            if(board[i][j] == NONE_STONE && effectiveBoard[i][j] == EFFECTIVE_POSITION) {
+                vector<int> effectivePoint = {i,j};
+//                loginfo("effectiveRange",effectivePoint[0],effectivePoint[1]);
+                effectiveList.push_back(effectivePoint);
             }
         }
     }
