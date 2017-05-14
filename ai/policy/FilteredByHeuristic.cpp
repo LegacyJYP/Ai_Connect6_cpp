@@ -9,7 +9,7 @@
 #include "Sort.h"
 #include "../utils/VectorUtils.h"
 #include "../../consts/GAME_BOARD.h"
-#include "../heuristic/onefile/Evaluation_ONEFILE.h"
+#include "../heuristic/Evaluation.h"
 
 vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int>> effectiveList, int stoneType) {
     vector<double> evalList;
@@ -21,7 +21,7 @@ vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int
 //        printStonePoint(stonePoint);
 //        printBoard(afterBoard);
 
-        double eval = ONEFILE::evaluation_onefile(afterBoard, stoneType);
+        double eval = evaluation(afterBoard, stoneType);
         evalList.push_back(eval); // todo 메모리 leak 확인
 //        loginfo("FilteredByHeuristic","filterByHeuristic","eval=",eval);
     }
@@ -31,7 +31,7 @@ vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int
     int numIdx = sortedIdx.size();
     int filteredNum = min((int)(numIdx * FILTERED_BY_HEURISTIC::THRESHOLD_PERSENTAGE),
                           FILTERED_BY_HEURISTIC::THRESHOLD_NUMBER);
-    loginfo("FilteredByHeuristic","sortAndReturnIdx ","filteredNum=",filteredNum);
+//    loginfo("FilteredByHeuristic","sortAndReturnIdx ","filteredNum=",filteredNum);
 
     vector<vector<int>> filteredList = vector<vector<int>>(filteredNum);
 

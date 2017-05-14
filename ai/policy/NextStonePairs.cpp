@@ -17,8 +17,8 @@ vector<vector<vector<int>>> nextStonePairsByPolicy(vector<vector<int>> board, in
 //    printStonePointList(effectiveList);
 
     vector<vector<int>> filteredStoneList = filterByHeuristic(board, effectiveList, stoneType);
-    loginfo("NextStonePairs","nextStonePairsByPolicy", "filteredStoneList=below");
-    printStonePointList(filteredStoneList);
+//    loginfo("NextStonePairs","nextStonePairsByPolicy", "filteredStoneList=below");
+//    printStonePointList(filteredStoneList);
     vector<vector<vector<int>>> filteredStonePairs = stonePoints2stonePairs(filteredStoneList);
 
 //    loginfo("NextStonePairs","filteredStonePairs","filteredStonePairs.size()=",filteredStonePairs.size());

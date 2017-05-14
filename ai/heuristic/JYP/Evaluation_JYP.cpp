@@ -10,7 +10,7 @@
 #include "../../../test/utils/FunctionCostUtils.h"
 
 
-double evaluation(std::vector<std::vector<int>> &board, int stoneType) {
+double evaluation_jyp(std::vector<std::vector<int>> &board, int stoneType) {
     functionCallStack(AI::HEURISTIC::EVALUATION_evaluation_key);
     functionTic(AI::HEURISTIC::EVALUATION_evaluation_key);
 

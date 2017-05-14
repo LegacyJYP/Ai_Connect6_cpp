@@ -24,7 +24,8 @@ list<vector<int>> effectiveRange(vector<vector<int>> &board) {
         }
     }
 
-    printBoard(effectiveBoard);
+//    loginfo("EffectiveRange","effectiveRange","effectiveBoard below=");
+//    printBoard(effectiveBoard);
 
     list<vector<int>> effectiveList;
 //

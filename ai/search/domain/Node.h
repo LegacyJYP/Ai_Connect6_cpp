@@ -15,22 +15,30 @@ using namespace std;
 class Node {
 private:
     string hashKey;
-    bool isExtended;
+    bool extended;
     Node* mother;
     list<Node*> children;
-    bool isMother;
+    bool isRoot;
     vector<vector<int>> stonePair;
     int stoneType;
     int depth;
+    double eval;
+    bool isEvaluated=false;
+    vector<vector<int>> board;
 public:
-    Node(vector<vector<int>> board, int stoneType, int depth) : isMother(true), isExtended(false),
+    Node() {};
+
+    Node(double eval) : eval(eval), extended(true) {}; // for test todo remote
+    Node(double eval, bool isRoot) : eval(eval), isRoot(isRoot), extended(true) {}; // for test todo remote
+
+    Node(vector<vector<int>> board, int stoneType, int depth) : isRoot(true), extended(false),
                                                                 stoneType(stoneType), depth(depth)
     {
         setState(board, true);
     };
 
-    Node(Node* node, vector<vector<int>> stonePair) : isMother(false), mother(node),
-                                                      isExtended(false), stonePair(stonePair),
+    Node(Node* node, vector<vector<int>> stonePair) : isRoot(false), mother(node),
+                                                      extended(false), stonePair(stonePair),
                                                       depth(getMother()->getDepth()+1)
     {
         setState(stonePair);
@@ -42,13 +50,17 @@ public:
     Node* getMother();
     list<Node*> getChildren();
     int getDepth();
+    vector<vector<int>> getBoard();
+    vector<vector<int>> getDiffBoard();
     int getStoneType();
     void setState(vector<vector<int>> stonePair);
     void setState(vector<vector<int>> board, bool isRoot);
     double getEvaluation();
     void setStoneTypeByMother();
+    bool isExtended();
 };
 
+Node* getOrCreateRoot(vector<vector<int>> board, int stoneType);
 
 
 #endif //AI_CONNECT6_NODE_H

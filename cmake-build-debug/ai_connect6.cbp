@@ -82,10 +82,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/GeneralMain.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/Evaluation.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/GeneralMain.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/Evaluation.h">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/JYP/Evaluation_JYP.cpp">
@@ -124,10 +124,28 @@
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/policy/Sort.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/Node.cpp">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/IterativeDeepening.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/Node.h">
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/IterativeDeepening.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/Minimax.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/Minimax.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/NodeExtend.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/NodeExtend.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/domain/Node.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/search/domain/Node.h">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/utils/BoardUtils.cpp">
@@ -158,6 +176,12 @@
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/main.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/MinimaxTest.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/MinimaxTest.h">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/Samples.cpp">

@@ -10,4 +10,4 @@
 #endif //AI_CONNECT6_EVALUATION_H
 
 
-double evaluation(std::vector<std::vector<int>> &board, int stoneType);
+double evaluation_jyp(std::vector<std::vector<int>> &board, int stoneType);

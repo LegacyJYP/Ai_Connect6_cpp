@@ -7,11 +7,6 @@
 
 #endif //AI_CONNECT6_EVALUATION_H
 
-
 #include <vector>
 
-using namespace std;
-
-double window(int stoneType, vector<vector<int>> board);
-
-double evaluation_onefile(vector<vector<int>> board, int comp);
+double evaluation(std::vector<std::vector<int>> &board, int stoneType);

@@ -8,6 +8,10 @@
 #endif //AI_CONNECT6_GENERALMAIN_H
 
 #include <vector>
+#include "domain/Node.h"
+
+
 using namespace std;
 
-void iterativeDeppeningSearch();
+Node* miniMaxWithAlphaBeta(Node* node, int depth,
+                          double alpha, double beta, bool maximizingPlayer, int maximumDepth);
