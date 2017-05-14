@@ -53,9 +53,9 @@ double toc(string key) {
 }
 
 void printToc() {
-//    loginfo("printToc",toc());
+    loginfo("printToc",toc());
 }
 
 void printToc(string key) {
-//    loginfo("printToc key ", toc(key));
+    loginfo("printToc key ", toc(key));
 }

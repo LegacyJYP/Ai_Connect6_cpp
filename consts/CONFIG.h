@@ -16,5 +16,5 @@ const int ROOT_DEPTH = 0;
 
 namespace ITERATIVE_DEEPENING_SEARCH {
     const int INITIAL_DEPTH = 1;
-    const int MAXIMUM_DEPTH = 20;
+    const int MAXIMUM_DEPTH = 3;
 }

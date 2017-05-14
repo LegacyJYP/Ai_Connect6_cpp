@@ -50,6 +50,7 @@ public:
     Node* getMother();
     list<Node*> getChildren();
     int getDepth();
+    vector<vector<int>> getStones();
     vector<vector<int>> getBoard();
     vector<vector<int>> getDiffBoard();
     int getStoneType();

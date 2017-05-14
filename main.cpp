@@ -17,16 +17,19 @@
 #include "ai/search/IterativeDeepening.h"
 #include "test/MinimaxTest.h"
 #include "ai/heuristic/Evaluation.h"
+#include "Connect6Algo.h"
 
 using namespace std;
 
 void testCountAndElapsedTime();
 
 int main() {
-    vector<vector<int>> board = getSample(2);
-    int stoneType = BLACK_STONE;
 
-    iterativeDeepeningSearch(board, stoneType);
+    myturn(2);
+//    vector<vector<int>> board = getSample(2);
+//    int stoneType = BLACK_STONE;
+//
+//    iterativeDeepeningSearch(board, stoneType);
 
 //
 //    double eval = evaluation(board, BLACK_STONE);

@@ -99,6 +99,21 @@ vector<double> vectorClone(vector<double> origin) {
     return clone;
 }
 
+vector<vector<int>> arr2vec(int board[][19]) {
+    int row = BOARD_SIZE;
+    int col = BOARD_SIZE;
+
+    vector<vector<int>> vecBoard(row, vector<int>(col));
+
+    for(int i = 0; i< row;i++) {
+        for(int j = 0; j< col;j++){
+            vecBoard[i][j] = board[i][j];
+        }
+    }
+
+    return vecBoard;
+}
+
 void fillBoardAroundPoint(vector<vector<int>>& board, int x, int y) {
     int row = board.size();
     int col = board[0].size();

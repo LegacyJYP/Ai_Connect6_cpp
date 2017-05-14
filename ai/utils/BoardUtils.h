@@ -20,6 +20,8 @@ vector<double> vectorClone(vector<double> origin);
 vector<vector<int>> boardCloneZeros(vector<vector<int>> board);
 void fillBoardAroundPoint(vector<vector<int>>& board, int x, int y);
 
+vector<vector<int>> arr2vec(int[][19]);
+
 std::vector<std::vector<int>> putStonePoint(std::vector<std::vector<int>> &board, std::vector<int> &stonePoint, int stoneType);
 std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType);
 std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::list<std::vector<int>> &stonePoints, int stoneType);

@@ -12,4 +12,4 @@
 
 using namespace std;
 
-void iterativeDeepeningSearch(vector<vector<int>> board, int stoneType);
+void iterativeDeepeningSearch(vector<vector<int>> board, int stoneType, int cnt, int x[], int y[]);

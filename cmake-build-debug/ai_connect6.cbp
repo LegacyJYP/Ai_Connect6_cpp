@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/GivenMain.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/Evaluation.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
