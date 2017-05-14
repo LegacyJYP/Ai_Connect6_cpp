@@ -15,7 +15,7 @@ vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int
     vector<double> evalList;
 
     for (auto stonePoint : effectiveList) {
-        loginfo("FilteredByHeuristic","afterBoard","putStone");
+//        loginfo("FilteredByHeuristic","afterBoard","putStone");
 
         vector<vector<int>> afterBoard = putStonePoint(board,stonePoint,stoneType);
 //        printStonePoint(stonePoint);
@@ -47,9 +47,6 @@ vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int
 //        loginfo("FilteredByHeuristic","filterByHeuristic","effectiveListVec.at(sortedIdx[X])=",effectiveListVec.at(sortedIdx[i])[X]);
 //        loginfo("FilteredByHeuristic","filterByHeuristic","effectiveListVec.at(sortedIdx[Y])=",effectiveListVec.at(sortedIdx[i])[Y]);
         filteredList[i] = effectiveListVec.at(sortedIdx[i]);
-        loginfo("FilteredByHeuristic","printBoard(afterBoard);","sorted ith=",i);
-        vector<vector<int>> afterBoard = putStonePoint(board, filteredList[i], stoneType);
-        printBoard(afterBoard);
 //        loginfo("FilteredByHeuristic","filterByHeuristic","after filteredList = effectiveList[sortedidx]");
 //        loginfo("FilteredByHeuristic","filterByHeuristic","filteredList[i][X]",filteredList[i][X]);
 //        loginfo("FilteredByHeuristic","filterByHeuristic","filteredList[i][Y]",filteredList[i][Y]);

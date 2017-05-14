@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <cmath>
 #include "test/Samples.h"
 #include "test/utils/PrintUtils.h"
 #include "ai/heuristic/JYP/Evaluation_JYP.h"
@@ -21,8 +22,6 @@ using namespace std;
 void testCountAndElapsedTime();
 
 int main() {
-    extern map<string,FunctionInfo> functionInfoMap;
-
     vector<vector<int>> board = getSample(2);
 
 //    double eval = ONEFILE::evaluation_onefile(board, BLACK_STONE);
