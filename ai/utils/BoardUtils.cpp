@@ -99,9 +99,9 @@ vector<double> vectorClone(vector<double> origin) {
     return clone;
 }
 
-vector<vector<int>> arr2vec(int board[][19]) {
-    int row = BOARD_SIZE;
-    int col = BOARD_SIZE;
+vector<vector<int>> arr2vec(int board[BOARD_ARRAY_SIZE][BOARD_ARRAY_SIZE]) {
+    int row = BOARD_ARRAY_SIZE;
+    int col = BOARD_ARRAY_SIZE;
 
     vector<vector<int>> vecBoard(row, vector<int>(col));
 

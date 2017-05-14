@@ -202,9 +202,6 @@
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/LOG_BY_EACHFUNCTION.h">
 			<Option target="ai_connect6"/>
 		</Unit>
-		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/LogUtils.cpp">
-			<Option target="ai_connect6"/>
-		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/LogUtils.h">
 			<Option target="ai_connect6"/>
 		</Unit>

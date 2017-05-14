@@ -1,0 +1,281 @@
+PrintUtils/printBoard:  0000000000000000000
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+Node getOrCreateRoot rootPtr isNull, createRoot
+IterativeDeepening iterativeDeepeningSearch depth= 1
+IterativeDeepening bestBoard below
+IterativeDeepening bestBoard stones
+PrintUtils printStonePoint
+printStonePoint 9 4
+PrintUtils printStonePoint
+printStonePoint 11 6
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000300000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000003000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+IterativeDeepening iterativeDeepeningSearch depth= 2
+IterativeDeepening bestBoard below
+IterativeDeepening bestBoard stones
+PrintUtils printStonePoint
+printStonePoint 12 7
+PrintUtils printStonePoint
+printStonePoint 5 11
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000030000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000300000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+IterativeDeepening iterativeDeepeningSearch depth= 3
+IterativeDeepening bestBoard below
+IterativeDeepening bestBoard stones
+PrintUtils printStonePoint
+printStonePoint 11 6
+PrintUtils printStonePoint
+printStonePoint 12 7
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000003000000000000
+PrintUtils/printBoard:  0000000300000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+Node getOrCreateRoot rootPtr notNull
+IterativeDeepening iterativeDeepeningSearch depth= 1
+IterativeDeepening bestBoard below
+IterativeDeepening bestBoard stones
+PrintUtils printStonePoint
+printStonePoint 9 4
+PrintUtils printStonePoint
+printStonePoint 11 6
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000300000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000003000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+IterativeDeepening iterativeDeepeningSearch depth= 2
+IterativeDeepening bestBoard below
+IterativeDeepening bestBoard stones
+PrintUtils printStonePoint
+printStonePoint 12 7
+PrintUtils printStonePoint
+printStonePoint 5 11
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000030000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000300000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+IterativeDeepening iterativeDeepeningSearch depth= 3
+IterativeDeepening bestBoard below
+IterativeDeepening bestBoard stones
+PrintUtils printStonePoint
+printStonePoint 11 6
+PrintUtils printStonePoint
+printStonePoint 12 7
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000003000000000000
+PrintUtils/printBoard:  0000000300000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+Node getOrCreateRoot rootPtr isNull, createRoot
+IterativeDeepening iterativeDeepeningSearch depth= 1
+IterativeDeepening bestBoard below
+IterativeDeepening bestBoard stones
+PrintUtils printStonePoint
+printStonePoint 9 4
+PrintUtils printStonePoint
+printStonePoint 11 6
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000300000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000003000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+IterativeDeepening iterativeDeepeningSearch depth= 2
+IterativeDeepening bestBoard below
+IterativeDeepening bestBoard stones
+PrintUtils printStonePoint
+printStonePoint 12 7
+PrintUtils printStonePoint
+printStonePoint 5 11
+printBoard
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0010000000000000000
+PrintUtils/printBoard:  0000000000001000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000030000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0001000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000010000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000300000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+PrintUtils/printBoard:  0000000000000000000
+IterativeDeepening iterativeDeepeningSearch depth= 3

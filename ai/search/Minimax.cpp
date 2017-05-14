@@ -6,6 +6,7 @@
 #include "../../test/utils/PrintUtils.h"
 #include "../../test/utils/LogUtils.h"
 #include "../../consts/SCORE.h"
+#include <algorithm>
 
 
 Node* miniMaxWithAlphaBeta(Node* node, int depth,

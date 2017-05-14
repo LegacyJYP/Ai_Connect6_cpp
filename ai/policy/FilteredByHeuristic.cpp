@@ -10,6 +10,7 @@
 #include "../utils/VectorUtils.h"
 #include "../../consts/GAME_BOARD.h"
 #include "../heuristic/Evaluation.h"
+#include <algorithm>
 
 vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int>> effectiveList, int stoneType) {
     vector<double> evalList;

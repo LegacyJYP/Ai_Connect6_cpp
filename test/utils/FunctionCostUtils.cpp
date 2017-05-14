@@ -77,8 +77,8 @@ void printSummary() {
     map<string, FunctionInfo>::iterator i;
     for (i = functionInfoMap.begin(); i != functionInfoMap.end(); i++) {
         if (i->second.isPrint()) {
-            cout << "함수이름 : " << i->first << endl;
-            cout << i->second << endl;
+//            cout << "함수이름 : " << i->first << endl;
+//            cout << i->second << endl;
         }
     }
 }

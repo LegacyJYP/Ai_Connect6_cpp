@@ -23,13 +23,20 @@ using namespace std;
 
 void testCountAndElapsedTime();
 
-int main() {
 
+void myturn(int cnt) {
+    vector<vector<int>> board = getSample(2);
+    int stoneType = BLACK_STONE;
+//    loginfo("hi");
+
+    int x[2];
+    int y[2];
+    iterativeDeepeningSearch(board, stoneType, 2, x,y);
+}
+
+int main() {
     myturn(2);
-//    vector<vector<int>> board = getSample(2);
-//    int stoneType = BLACK_STONE;
-//
-//    iterativeDeepeningSearch(board, stoneType);
+    myturn(2);
 
 //
 //    double eval = evaluation(board, BLACK_STONE);
@@ -43,7 +50,7 @@ int main() {
 //
 //    int stoneType = BLACK_STONE;
 //    vector<vector<vector<int>>> nextStonePairs = nextStonePairsByPolicy(board, stoneType);
-////    printStonePairList(nextStonePairs);
+//    printStonePairList(nextStonePairs);
 //
 //    // --------------------------------------------------------------------------------------
 //
@@ -63,15 +70,15 @@ int main() {
 //    printToc(); // Total time;
 //
 //    printSummary();
-
-    return 0;
-}
-
-void testCountAndElapsedTime() {
-    for (int i = 0; i < 900000; ++i) {
-        vector<vector<int>> board = getSample(1);
-//        printBoard(board);
-
-        double eval = evaluation(board, BLACK_STONE);
-    }
+//
+//    return 0;
+//}
+//
+//void testCountAndElapsedTime() {
+//    for (int i = 0; i < 900000; ++i) {
+//        vector<vector<int>> board = getSample(1);
+////        printBoard(board);
+//
+//        double eval = evaluation(board, BLACK_STONE);
+//    }
 }

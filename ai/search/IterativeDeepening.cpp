@@ -16,12 +16,13 @@
 #include "NodeExtend.h"
 
 
+
 void iterativeDeepeningSearch(vector<vector<int>> board, int stoneType, int cnt, int x[], int y[]) {
     printBoard(board);
 
     if(cnt == 1) {
-        *x = { 5 };
-        *y = { 5 };
+        *x = {5};
+        *y = {5};
         return;
     }
 
@@ -38,17 +39,14 @@ void iterativeDeepeningSearch(vector<vector<int>> board, int stoneType, int cnt,
                                               targetDepth);
 
         vector<vector<int>> stonePair = bestNode->getStones();
-//        x[0] = 7;
-//        x[1] = 9;
-//        y[0] = 1;
-//        y[1] = 3;
-        x[0] = stonePair[0][X];
-        x[1] = stonePair[1][X];
-        y[0] = stonePair[0][Y];
-        y[1] = stonePair[1][Y];
+        x[0] = stonePair[0][X];y[0] = stonePair[0][Y];
+        x[1] = stonePair[1][X];y[1] = stonePair[1][Y];
 
         vector<vector<int>> bestBoard = bestNode->getDiffBoard();
-        loginfo("IterativeDeepening","bestBoard below");
+        loginfo("IterativeDeepening","bestBoard below", true);
+        vector<vector<int>> stones = bestNode->getStones();
+        loginfo("IterativeDeepening","bestBoard stones", true);
+        printStonePair(stones);
         printBoard(bestBoard);
         targetDepth++;
         if(targetDepth > ITERATIVE_DEEPENING_SEARCH::MAXIMUM_DEPTH) {

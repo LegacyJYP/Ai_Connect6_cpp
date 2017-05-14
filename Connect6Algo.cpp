@@ -129,7 +129,7 @@ static void doCommand() {
 	}
 }
 
-static DWORD WINAPI threadLoop(LPVOID) {	
+static DWORD WINAPI threadLoop(LPVOID) {
 	while (1) {
 		WaitForSingleObject(event1, INFINITE);
 		myturn(cnt);

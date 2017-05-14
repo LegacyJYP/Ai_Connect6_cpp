@@ -4,8 +4,10 @@
 
 #ifndef AI_CONNECT6_CONFIG_H
 #define AI_CONNECT6_CONFIG_H
-
-#endif //AI_CONNECT6_CONFIG_H
+#include <string>
+#include <fstream>
+#include <iostream>
+using namespace std;
 
 namespace FILTERED_BY_HEURISTIC {
     const double THRESHOLD_PERSENTAGE = 0.1;
@@ -18,3 +20,10 @@ namespace ITERATIVE_DEEPENING_SEARCH {
     const int INITIAL_DEPTH = 1;
     const int MAXIMUM_DEPTH = 3;
 }
+
+const bool LOG_ON_FILE = true;
+const string LOG_FILENAME = "output.txt";
+const bool LOG_ON_CONSOLE = false;
+
+
+#endif //AI_CONNECT6_CONFIG_H

@@ -15,7 +15,7 @@ Node root;
 Node* rootPtr = nullptr;
 
 void Node::extend(vector<vector<vector<int>>> stonePairs) {
-    loginfo("Node","Node::extend");
+    loginfo("Node","Node::extend", false);
     for (auto stonePair : stonePairs) {
         Node* child = new Node(this, stonePair);
         this->addChild(child);
@@ -127,6 +127,7 @@ Node* getOrCreateRoot(vector<vector<int>> board, int stoneType) {
         rootPtr = &root;
         loginfo("Node","getOrCreateRoot","rootPtr isNull, createRoot");
     } else {
+        root = Node(board, ENEMY_STONE(stoneType), depth);
         loginfo("Node","getOrCreateRoot","rootPtr notNull");
     }
 

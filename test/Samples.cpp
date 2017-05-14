@@ -30,7 +30,7 @@ vector<vector<int>> getSample(int idx)
 }
 
 void initSamples() {
-    cout << "initSamples\n";
+//    cout << "initSamples\n";
     // 0
     VAR_SAMPLES.push_back({
                                   "0000000000000000000",
