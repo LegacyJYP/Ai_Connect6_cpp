@@ -11,8 +11,7 @@
 #include "../../utils/BoardUtils.h"
 #include "../../heuristic/Evaluation.h"
 
-Node root;
-Node* rootPtr = nullptr;
+Node* ROOTPTR = nullptr;
 
 void Node::extend(vector<vector<vector<int>>> stonePairs) {
     loginfo("Node","Node::extend", false);
@@ -128,16 +127,16 @@ void Node::setState(vector<vector<int>> board, bool isRoot) {
 
 Node* getOrCreateRoot(vector<vector<int>> board, int stoneType) {
     int depth =0;
-    if (rootPtr == nullptr) {
-        root = Node(board,ENEMY_STONE(stoneType),depth);
-        rootPtr = &root;
+    if (ROOTPTR == nullptr) {
+        ROOTPTR = new Node(board,ENEMY_STONE(stoneType),depth);
         loginfo("Node","getOrCreateRoot","rootPtr isNull, createRoot");
     } else {
-        root = Node(board, ENEMY_STONE(stoneType), depth);
+        free(ROOTPTR);
+        ROOTPTR = new Node(board, ENEMY_STONE(stoneType), depth);
         loginfo("Node","getOrCreateRoot","rootPtr notNull");
     }
 
-    return rootPtr;
+    return ROOTPTR;
 }
 
 //string hashKey = stonePair;
