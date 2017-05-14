@@ -14,17 +14,18 @@
 vector<vector<vector<int>>> nextStonePairsByPolicy(vector<vector<int>> board, int stoneType) {
 
     list<vector<int>> effectiveList = effectiveRange(board); // 왜 중복이 많이 뜨지? -> 해결
-//    printStonePointList(effectiveList);
+    printStonePointList(effectiveList);
 
     vector<vector<int>> filteredStoneList = filterByHeuristic(board, effectiveList, stoneType);
-//    loginfo("NextStonePairs","nextStonePairsByPolicy", "filteredStoneList=below");
-//    printStonePointList(filteredStoneList);
+    loginfo("NextStonePairs","nextStonePairsByPolicy", "filteredStoneList=below");
+    printStonePointList(filteredStoneList);
     vector<vector<vector<int>>> filteredStonePairs = stonePoints2stonePairs(filteredStoneList);
 
-//    loginfo("NextStonePairs","filteredStonePairs","filteredStonePairs.size()=",filteredStonePairs.size());
+    loginfo("NextStonePairs","filteredStonePairs","filteredStonePairs.size()=",filteredStonePairs.size());
 //    for (auto stonePair: filteredStonePairs) {
 //        loginfo("NextStonePairs","nextStonePairsByPolicy","policy result");
-//        vector<vector<int>> sboard = putStonePoints(board, stonePair, stoneType);
+//        loginfo("NextStonePairs", "stonepairSize", stonePair.size());
+//        vector<vector<int>> sboard = putStonePointsForVisualize(board, stonePair, stoneType);
 //        printBoard(sboard);
 //    }
 

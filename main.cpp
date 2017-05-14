@@ -25,7 +25,7 @@ void testCountAndElapsedTime();
 
 
 void myturn(int cnt) {
-    vector<vector<int>> board = getSample(2);
+    vector<vector<int>> board = getSample(0);
     int stoneType = BLACK_STONE;
 //    loginfo("hi");
 

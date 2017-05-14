@@ -21,9 +21,10 @@ namespace ITERATIVE_DEEPENING_SEARCH {
     const int MAXIMUM_DEPTH = 3;
 }
 
-const bool LOG_ON_FILE = true;
-const string LOG_FILENAME = "output.txt";
-const bool LOG_ON_CONSOLE = false;
+const bool LOG_ON_FILE = false;
+const string LOG_FILENAME = "C:/jyp/output.log";
+//const string LOG_FILENAME = "output.txt";
+const bool LOG_ON_CONSOLE = true;
 
 
 #endif //AI_CONNECT6_CONFIG_H

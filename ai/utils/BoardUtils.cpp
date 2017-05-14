@@ -100,8 +100,8 @@ vector<double> vectorClone(vector<double> origin) {
 }
 
 vector<vector<int>> arr2vec(int board[BOARD_ARRAY_SIZE][BOARD_ARRAY_SIZE]) {
-    int row = BOARD_ARRAY_SIZE;
-    int col = BOARD_ARRAY_SIZE;
+    int row = BOARD_SIZE;
+    int col = BOARD_SIZE;
 
     vector<vector<int>> vecBoard(row, vector<int>(col));
 
@@ -182,7 +182,7 @@ std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector
 
     for (auto stonePoint : stonePoints)
     {
-        result[stonePoint[X]][stonePoint[Y]] = stoneType+2;
+        result[stonePoint[X]][stonePoint[Y]] = stoneType+4;
     }
 
     return result;

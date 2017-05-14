@@ -18,11 +18,17 @@ void Node::extend(vector<vector<vector<int>>> stonePairs) {
     loginfo("Node","Node::extend", false);
     for (auto stonePair : stonePairs) {
         Node* child = new Node(this, stonePair);
+//        child->getDepth()
         this->addChild(child);
 //        loginfo("Node","Node::extend","stonePair=below");
 //        printStonePair(stonePair);
     }
-    this->extended = true;
+
+    int len = stonePairs.size();
+    loginfo("Node","Node::extend","len=",len);
+    if (len > 0) {
+        this->extended = true;
+    }
 }
 
 void Node::addChild(Node *child) {
