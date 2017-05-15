@@ -11,13 +11,12 @@
 
 Node* miniMaxWithAlphaBeta(Node* node, int depth,
                            double alpha, double beta, bool maximizingPlayer, int maximumDepth) {
-
+    loginfo("Minimax","miniMaxWithAlphaBeta", false);
     node->getEvaluation();
 
     double v = 0;
     Node* bestNode = node;
     if(node->getEvaluation() >= GAMEEND || node->getEvaluation() <= (-GAMEEND) || (!node->isExtended()) || depth == maximumDepth) {
-//        loginfo("Minimax","miniMaxWithAlphaBeta","bestNode->getEvaluation()=",bestNode->getEvaluation());
         return bestNode;
     }
 

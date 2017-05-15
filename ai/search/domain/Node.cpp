@@ -16,10 +16,16 @@ Node* ROOT_PTR = nullptr;
 
 void Node::extend(vector<vector<vector<int>>> stonePairs) {
     loginfo("Node","Node::extend", false);
+
+
+
     for (auto stonePair : stonePairs) {
         Node* child = new Node(this, stonePair);
 //        child->getDepth()
         this->addChild(child);
+//        if(terminateAI) {
+//            return;
+//        }
 //        loginfo("Node","Node::extend","stonePair=below");
 //        printStonePair(stonePair);
     }

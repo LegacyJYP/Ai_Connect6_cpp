@@ -28,7 +28,7 @@ const int BOARD_SIZE = 19;
 #endif
 
 // fillBoardAroundPoint
-const int EFFECTIVE_RANGE = 3;
+const int EFFECTIVE_RANGE = 4;
 
 const int EFFECTIVE_POSITION = 1;
 const int NOT_AVAILABLE_POSITION = 0;

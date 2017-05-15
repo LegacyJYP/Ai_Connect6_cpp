@@ -14,9 +14,9 @@ void NodeExtend(Node* node, int targetDepth) {
     bool printFlag = false;
 
     if (!node->isExtended()) { // todo Extend More
-        if(node->getEvaluation() > GAMEEND/2) {
+        if(node->getEvaluation() > GAMEEND/2 || node->getEvaluation() < -GAMEEND/2) {
             // nope
-            loginfo("NodeExtend","vector<vector<vector<int>>>","eval > GAMEEND/2 -> size=0으로 확장", printFlag);
+            loginfo("NodeExtend","vector<vector<vector<int>>>","eval > GAMEEND/2 -> size=0으로 확장", true);
             node->extend(vector<vector<vector<int>>>(0));
             return;
         }

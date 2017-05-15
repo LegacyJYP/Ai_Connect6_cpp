@@ -18,12 +18,14 @@ double evaluation(std::vector<std::vector<int>> &board, int stoneType) {
     // wincheck
     if(winner == MY_STONE) {
         eval = GAMEEND;
+        loginfo("Evaluation","evaluation","eval=",eval,printFlag);
     } else if (winner == NOT_MY_STONE) {
         eval = -GAMEEND;
+        loginfo("Evaluation","evaluation","eval=",eval,printFlag);
     } else {
         eval = evaluation_onefile(board, stoneType);
     }
 
-    loginfo("Evaluation","evaluation","eval=",eval,printFlag);
+
     return eval;
 }

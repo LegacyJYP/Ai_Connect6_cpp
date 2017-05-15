@@ -16,15 +16,23 @@
 //#include "test/utils/LogUtils.h"
 //#include "test/utils/PrintUtils.h"
 //
-//int stoneType = BLACK_STONE;
+//const int stoneType = MY_STONE;
 //
 //void myturn(int cnt) {
-//    tic();
 //    int x[2], y[2];
 //
+//    if(terminateAI) {
+//        return;
+//    }
 //
-//    extern int board[BOARD_ARRAY_SIZE][BOARD_ARRAY_SIZE];
-//    vector<vector<int>> copyBoard = arr2vec(board);
+//    vector<vector<int>> copyBoard(BOARD_SIZE,vector<int>(BOARD_SIZE));
+//
+//    for(int i = 0; i<BOARD_SIZE; i++) {
+//        for(int j=0; j<BOARD_SIZE;j++) {
+//            copyBoard[i][j] = showBoard(i,j);
+//        }
+//    }
+//
 //    loginfo("GivenMain","copyBoard=");
 //    printBoard(copyBoard);
 //    iterativeDeepeningSearch(copyBoard, stoneType, cnt, x,y);

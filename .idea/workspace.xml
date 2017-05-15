@@ -12,21 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b849965-2dfb-4a8f-a3bb-0ec1ce728f3f" name="Default" comment="로그 주석화, generalmain생성">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai/heuristic/JYP/CountMatches.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai/heuristic/JYP/CountMatches.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai/heuristic/JYP/EverySequence.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ai/heuristic/JYP/EverySequence.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/StringSequenceTest.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/StringSequenceTest.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ai_connect6" afterPath="$PROJECT_DIR$/cmake-build-debug/ai_connect6" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ai_connect6.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/ai_connect6.cbp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/heuristic/Evaluation.h" afterPath="$PROJECT_DIR$/ai/heuristic/Evaluation.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/heuristic/JYP/Evaluation_JYP.cpp" afterPath="$PROJECT_DIR$/ai/heuristic/JYP/Evaluation_JYP.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/heuristic/JYP/Evaluation_JYP.h" afterPath="$PROJECT_DIR$/ai/heuristic/JYP/Evaluation_JYP.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/utils/BoardUtils.cpp" afterPath="$PROJECT_DIR$/ai/utils/BoardUtils.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/utils/BoardUtils.h" afterPath="$PROJECT_DIR$/ai/utils/BoardUtils.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consts/GAME_BOARD.h" afterPath="$PROJECT_DIR$/consts/GAME_BOARD.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Ai_Algorithm_Code.cpp" afterPath="$PROJECT_DIR$/Ai_Algorithm_Code.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Connect6Algo.cpp" afterPath="$PROJECT_DIR$/Connect6Algo.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/heuristic/Evaluation.cpp" afterPath="$PROJECT_DIR$/ai/heuristic/Evaluation.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/policy/FilteredByHeuristic.cpp" afterPath="$PROJECT_DIR$/ai/policy/FilteredByHeuristic.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/policy/NextStonePairs.cpp" afterPath="$PROJECT_DIR$/ai/policy/NextStonePairs.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/search/IterativeDeepening.cpp" afterPath="$PROJECT_DIR$/ai/search/IterativeDeepening.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/search/Minimax.cpp" afterPath="$PROJECT_DIR$/ai/search/Minimax.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/search/NodeExtend.cpp" afterPath="$PROJECT_DIR$/ai/search/NodeExtend.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/search/domain/Node.cpp" afterPath="$PROJECT_DIR$/ai/search/domain/Node.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/consts/CONFIG.h" afterPath="$PROJECT_DIR$/consts/CONFIG.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -43,26 +40,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StringSequenceTest.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/StringSequenceTest.cpp">
+      <file leaf-file-name="IterativeDeepening.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ai/search/IterativeDeepening.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-              <folding>
-                <element signature="e#42#73#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="223">
+              <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Evaluation_JYP.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ai/heuristic/JYP/Evaluation_JYP.cpp">
+      <file leaf-file-name="Node.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai/search/domain/Node.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="81" column="12" lean-forward="false" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
-              <folding>
-                <element signature="e#42#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,36 +64,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ENEMY_</find>
-      <find>ENEMY_S</find>
-      <find>ENEMY_STON</find>
-      <find>ENEMY_STONE</find>
-      <find>b</find>
-      <find>boardC</find>
-      <find>boardCl</find>
-      <find>clone</find>
-      <find>boardClone</find>
-      <find>l</find>
-      <find>clas</find>
-      <find>EverySequence</find>
-      <find>class</find>
-      <find>:</find>
-      <find>::</find>
-      <find>::mins</find>
-      <find>::minst</find>
-      <find>::minstanc</find>
-      <find>::minstance</find>
-      <find>a</find>
-      <find>mInstance</find>
-      <find>getSe</find>
-      <find>score</find>
-      <find>ai_connect6</find>
-      <find>e</find>
+      <find>CountM</find>
+      <find>StringSequenceTest testScore</find>
+      <find>StringSequenceTest testScore</find>
+      <find>StringSequenceTest</find>
+      <find>StringSequenceTest</find>
+      <find>ter</find>
+      <find>AI</find>
+      <find>extern</find>
+      <find>terminate</find>
+      <find>terminateA</find>
+      <find>terminateAi</find>
+      <find>termi</find>
       <find>eval</find>
       <find>evalu</find>
       <find>evaluation</find>
-      <find>wall</find>
-      <find>wall_</find>
+      <find>mini</find>
+      <find>minim</find>
+      <find>minima</find>
+      <find>minimax</find>
+      <find>b</find>
+      <find>best</find>
+      <find>bestNode</find>
+      <find>e</find>
+      <find>exten</find>
+      <find>exte(</find>
+      <find>exted(</find>
+      <find>exted</find>
+      <find>exte</find>
+      <find>extend</find>
+      <find>extend(</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -145,46 +138,46 @@
         <option value="$PROJECT_DIR$/test/utils/FunctionCostUtils.cpp" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/test/utils/LogUtils.h" />
-        <option value="$PROJECT_DIR$/ai/search/Minimax.cpp" />
-        <option value="$PROJECT_DIR$/Connect6Algo.cpp" />
-        <option value="$PROJECT_DIR$/ai/policy/FilteredByHeuristic.cpp" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/ai/heuristic/RuleChk.cpp" />
         <option value="$PROJECT_DIR$/ai/search/domain/Node.h" />
         <option value="$PROJECT_DIR$/ai/search/domain/NodeListMap.h" />
-        <option value="$PROJECT_DIR$/ai/policy/NextStonePairs.cpp" />
         <option value="$PROJECT_DIR$/GivenMain.cpp" />
-        <option value="$PROJECT_DIR$/consts/CONFIG.h" />
-        <option value="$PROJECT_DIR$/Ai_Algorithm_Code.cpp" />
-        <option value="$PROJECT_DIR$/ai/search/domain/Node.cpp" />
-        <option value="$PROJECT_DIR$/ai/search/NodeExtend.cpp" />
         <option value="$PROJECT_DIR$/test/utils/PrintUtils.h" />
         <option value="$PROJECT_DIR$/test/utils/PrintUtils.cpp" />
-        <option value="$PROJECT_DIR$/test/Samples.cpp" />
         <option value="$PROJECT_DIR$/ai/heuristic/RuleChk.h" />
         <option value="$PROJECT_DIR$/test/utils/GameEndTest.h" />
         <option value="$PROJECT_DIR$/test/utils/GameEndTest.cpp" />
         <option value="$PROJECT_DIR$/test/utils/TimeUtils.cpp" />
         <option value="$PROJECT_DIR$/test/utils/TimeUtils.h" />
         <option value="$PROJECT_DIR$/ai/search/domain/NodeListMap.cpp" />
-        <option value="$PROJECT_DIR$/ai/heuristic/Evaluation.cpp" />
-        <option value="$PROJECT_DIR$/ai/search/IterativeDeepening.cpp" />
-        <option value="$PROJECT_DIR$/consts/GAME_BOARD.h" />
         <option value="$PROJECT_DIR$/ai/utils/BoardUtils.cpp" />
         <option value="$PROJECT_DIR$/ai/heuristic/Evaluation.h" />
         <option value="$PROJECT_DIR$/ai/utils/BoardUtils.h" />
         <option value="$PROJECT_DIR$/ai/heuristic/JYP/Evaluation_JYP.h" />
         <option value="$PROJECT_DIR$/ai/heuristic/JYP/CountMatches.h" />
         <option value="$PROJECT_DIR$/ai/heuristic/JYP/EverySequence.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/test/JypEvalScoreTest.cpp" />
         <option value="$PROJECT_DIR$/test/JypEvScoreTest.h" />
         <option value="$PROJECT_DIR$/test/JypEvScoreTest.cpp" />
         <option value="$PROJECT_DIR$/test/StringSequenceTest.h" />
-        <option value="$PROJECT_DIR$/test/StringSequenceTest.cpp" />
-        <option value="$PROJECT_DIR$/ai/heuristic/JYP/CountMatches.cpp" />
+        <option value="$PROJECT_DIR$/consts/GAME_BOARD.h" />
+        <option value="$PROJECT_DIR$/test/Samples.cpp" />
         <option value="$PROJECT_DIR$/ai/heuristic/JYP/EverySequence.cpp" />
+        <option value="$PROJECT_DIR$/ai/heuristic/JYP/CountMatches.cpp" />
+        <option value="$PROJECT_DIR$/test/StringSequenceTest.cpp" />
         <option value="$PROJECT_DIR$/ai/heuristic/JYP/Evaluation_JYP.cpp" />
+        <option value="$PROJECT_DIR$/ai/heuristic/RuleChk.cpp" />
+        <option value="$PROJECT_DIR$/Ai_Algorithm_Code.cpp" />
+        <option value="$PROJECT_DIR$/Connect6Algo.cpp" />
+        <option value="$PROJECT_DIR$/ai/search/Minimax.cpp" />
+        <option value="$PROJECT_DIR$/ai/search/NodeExtend.cpp" />
+        <option value="$PROJECT_DIR$/ai/policy/NextStonePairs.cpp" />
+        <option value="$PROJECT_DIR$/ai/policy/FilteredByHeuristic.cpp" />
+        <option value="$PROJECT_DIR$/consts/CONFIG.h" />
+        <option value="$PROJECT_DIR$/ai/heuristic/Evaluation.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/ai/search/IterativeDeepening.cpp" />
+        <option value="$PROJECT_DIR$/ai/search/domain/Node.cpp" />
       </list>
     </option>
   </component>
@@ -202,9 +195,8 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="840" />
     <option name="y" value="23" />
-    <option name="width" value="840" />
+    <option name="width" value="1680" />
     <option name="height" value="1023" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -278,25 +270,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ai_connect6" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ai_connect6" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
+              <option name="myItemId" value="consts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -328,7 +302,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="heuristic" />
+              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,10 +321,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="heuristic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JYP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -614,7 +584,7 @@
       <workItem from="1494764127270" duration="2475000" />
       <workItem from="1494767603007" duration="1306000" />
       <workItem from="1494770828962" duration="17298000" />
-      <workItem from="1494812152980" duration="21101000" />
+      <workItem from="1494812152980" duration="25275000" />
     </task>
     <task id="LOCAL-00001" summary="로그 주석화, generalmain생성">
       <created>1494734420653</created>
@@ -627,10 +597,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123184000" />
+    <option name="totallyTimeSpent" value="127358000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="840" y="23" width="840" height="1023" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -638,9 +608,9 @@
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914045" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809225" sideWeight="0.50357145" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6345238" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45059523" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809225" sideWeight="0.49642858" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3654762" sideWeight="0.49375" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1827381" sideWeight="0.49375" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32825205" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1827381" sideWeight="0.50625" order="2" side_tool="true" content_ui="tabs" />
@@ -666,12 +636,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="98" />
+      <option name="time" value="101" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="i" language="ObjectiveC" />
         <watch expression="i+t+a" language="ObjectiveC" />
+        <watch expression="sequence_score_pair[0].getScore()" language="ObjectiveC" />
         <watch expression="j" language="ObjectiveC" />
         <watch expression="node-&gt;getChildren()" language="ObjectiveC" />
         <watch expression="WALL_STONE_CHAR" language="ObjectiveC" />
@@ -681,82 +652,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/utils/StoneUtils.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/utils/LOG_BY_EACHFUNCTION.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="640" column="70" lean-forward="false" selection-start-line="640" selection-start-column="70" selection-end-line="640" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/policy/NextStonePairs.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="28" lean-forward="false" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ai/search/domain/NodeListMap.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/policy/NextStonePairs.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="24" column="71" lean-forward="false" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Connect6Algo.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="144" column="0" lean-forward="true" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/search/Minimax.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -769,58 +668,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/consts/CONFIG.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/heuristic/RuleChk.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/search/domain/Node.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="40" column="54" lean-forward="false" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ai/search/NodeExtend.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/search/NodeExtend.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/search/domain/Node.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="174" column="27" lean-forward="true" selection-start-line="174" selection-start-column="27" selection-end-line="174" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/policy/FilteredByHeuristic.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -869,30 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ai/heuristic/RuleChk.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/heuristic/Evaluation.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/search/IterativeDeepening.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/Samples.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -925,22 +752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/Samples.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/heuristic/Evaluation.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/utils/FunctionCostUtils.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -953,22 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consts/GAME_BOARD.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="29" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ai_Algorithm_Code.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1029,55 +824,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/heuristic/JYP/CountMatches.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ai/utils/BoardUtils.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="194" column="18" lean-forward="false" selection-start-line="194" selection-start-column="17" selection-end-line="194" selection-end-column="18" />
+        <state relative-caret-position="-360">
+          <caret line="268" column="25" lean-forward="true" selection-start-line="268" selection-start-column="25" selection-end-line="268" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ai/heuristic/JYP/EverySequence.h">
+    <entry file="file://$PROJECT_DIR$/ai/heuristic/RuleChk.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ai/heuristic/JYP/EverySequence.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="69" lean-forward="true" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/StringSequenceTest.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-          <folding>
-            <element signature="e#42#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1091,11 +850,221 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ai/heuristic/JYP/Evaluation_JYP.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="81" column="12" lean-forward="false" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+        <state relative-caret-position="262">
+          <caret line="32" column="2" lean-forward="true" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
           <folding>
             <element signature="e#42#61#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/StringSequenceTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/heuristic/JYP/EverySequence.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/heuristic/JYP/EverySequence.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="398" column="0" lean-forward="false" selection-start-line="398" selection-start-column="0" selection-end-line="398" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/heuristic/RuleChk.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#42#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/heuristic/JYP/CountMatches.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Connect6Algo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/utils/VectorUtils.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/heuristic/Evaluation.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/search/IterativeDeepening.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="5" lean-forward="false" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consts/GAME_BOARD.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ai_Algorithm_Code.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="826" lean-forward="false" selection-start-line="12" selection-start-column="826" selection-end-line="12" selection-end-column="826" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/MinimaxTest.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/search/Minimax.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/consts/CONFIG.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Connect6Algo.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="190" column="9" lean-forward="true" selection-start-line="190" selection-start-column="9" selection-end-line="190" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/policy/NextStonePairs.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="26" column="70" lean-forward="false" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/search/domain/Node.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="47" column="14" lean-forward="true" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/Samples.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="120" column="46" lean-forward="false" selection-start-line="120" selection-start-column="46" selection-end-line="120" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/policy/FilteredByHeuristic.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="102" column="2" lean-forward="true" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/heuristic/Evaluation.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/search/domain/Node.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/search/NodeExtend.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/search/IterativeDeepening.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

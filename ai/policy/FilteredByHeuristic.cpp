@@ -12,6 +12,56 @@
 #include "../heuristic/Evaluation.h"
 #include <algorithm>
 
+vector<vector<vector<int>>> filterPairByHeuristic(vector<vector<int>> board, vector<vector<vector<int>>> effectivePair, int stoneType) {
+    vector<double> evalList;
+
+    for (auto stonePair : effectivePair) {
+
+        vector<vector<int>> afterBoard = putStonePoints(board,stonePair,stoneType);
+
+        double eval = evaluation(afterBoard, stoneType);
+        evalList.push_back(eval); // todo 메모리 leak 확인
+
+        bool printFlag = false;
+        loginfo("",printFlag );
+        loginfo("FilteredByHeuristic","filterByHeuristic","eval=",eval,printFlag );
+//                printStonePoint(stonePoint);
+        loginfo("FilteredByHeuristic","filterByHeuristic","eval=",eval,printFlag );
+        loginfo("FilteredByHeuristic","afterBoard","putStone",printFlag );
+//        printBoard(afterBoard);
+        loginfo("",printFlag );
+    }
+
+    vector<int> sortedIdx = sortAndReturnIdx(evalList); // todo 상위 구하고 정렬 멈추기
+
+    int numIdx = sortedIdx.size();
+    int filteredNum = min((int)(numIdx * FILTERED_BY_HEURISTIC::THRESHOLD_PERSENTAGE),
+                          FILTERED_BY_HEURISTIC::PAIR_THRESHOLD_NUMBER);
+    loginfo("FilteredByHeuristic","sortAndReturnIdx ","filteredNum=",filteredNum);
+
+    vector<vector<vector<int>>> filteredList = vector<vector<vector<int>>>(filteredNum);
+
+//    loginfo("FilteredByHeuristic","sortAndReturnIdx","list2vec before");
+//    printStonePointList(effectiveList);
+//    loginfo("FilteredByHeuristic","sortAndReturnIdx","list2vec after");
+//    printStonePointList(effectiveListVec);
+    for(int i=0; i<filteredNum; i++) { // 한번도 안돌음 -> 해결
+//        loginfo("FilteredByHeuristic","filterByHeuristic","before filteredList = effectiveList[sortedidx]");
+//        loginfo("FilteredByHeuristic","filterByHeuristic","i=",i);
+//        loginfo("FilteredByHeuristic","filterByHeuristic","sortedIdx[i]=",sortedIdx[i]);
+//        loginfo("FilteredByHeuristic","filterByHeuristic","effectiveListVec.at(sortedIdx[X])=",effectiveListVec.at(sortedIdx[i])[X]);
+//        loginfo("FilteredByHeuristic","filterByHeuristic","effectiveListVec.at(sortedIdx[Y])=",effectiveListVec.at(sortedIdx[i])[Y]);
+        filteredList[i] = effectivePair.at(sortedIdx[i]);
+//        loginfo("FilteredByHeuristic","filterByHeuristic","after filteredList = effectiveList[sortedidx]");
+//        loginfo("FilteredByHeuristic","filterByHeuristic","filteredList[i][X]",filteredList[i][X]);
+//        loginfo("FilteredByHeuristic","filterByHeuristic","filteredList[i][Y]",filteredList[i][Y]);
+    }
+
+//    printStonePointList(filteredList);
+
+    return filteredList;
+}
+
 vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int>> effectiveList, int stoneType) {
     vector<double> evalList;
 
@@ -37,7 +87,7 @@ vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int
     int numIdx = sortedIdx.size();
     int filteredNum = min((int)(numIdx * FILTERED_BY_HEURISTIC::THRESHOLD_PERSENTAGE),
                           FILTERED_BY_HEURISTIC::THRESHOLD_NUMBER);
-//    loginfo("FilteredByHeuristic","sortAndReturnIdx ","filteredNum=",filteredNum);
+    loginfo("FilteredByHeuristic","sortAndReturnIdx ","filteredNum=",filteredNum);
 
     vector<vector<int>> filteredList = vector<vector<int>>(filteredNum);
 

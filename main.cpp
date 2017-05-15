@@ -22,6 +22,7 @@
 #include "test/utils/GameEndTest.h"
 #include "test/StringSequenceTest.h"
 
+
 using namespace std;
 
 void testCountAndElapsedTime();
@@ -49,20 +50,20 @@ void myturn(int cnt) {
 }
 
 int main() {
-    testStringSeq();
-    testScore();
-    copyBoard = getSample(1);
-    myturn(1);
+//    testStringSeq();
+//    testScore();
+//    copyBoard = getSample(1);
+//    myturn(1);
+//
+//    myturn(2);
+//
+//    copyBoard = getSample(2);
+//    myturn(2);
+//
+//    copyBoard = getSample(3);
+//    myturn(2);
 
-    myturn(2);
-
-    copyBoard = getSample(2);
-    myturn(2);
-
-    copyBoard = getSample(3);
-    myturn(2);
-
-    copyBoard = getSample(4);
+    copyBoard = getSample(5);
     myturn(2);
 
 //    tic();

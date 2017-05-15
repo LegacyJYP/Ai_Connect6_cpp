@@ -12,5 +12,5 @@
 #include "../../consts/CONFIG.h"
 
 using namespace std;
-
+vector<vector<vector<int>>> filterPairByHeuristic(vector<vector<int>> board, vector<vector<vector<int>>> effectivePair, int stoneType);
 vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int>> effectiveList, int stoneType);

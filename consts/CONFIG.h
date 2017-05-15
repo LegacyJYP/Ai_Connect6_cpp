@@ -10,8 +10,9 @@
 using namespace std;
 
 namespace FILTERED_BY_HEURISTIC {
-    const double THRESHOLD_PERSENTAGE = 0.1;
-    const int THRESHOLD_NUMBER = 50;
+    const double THRESHOLD_PERSENTAGE = 1;
+    const int PAIR_THRESHOLD_NUMBER = 10;
+    const int THRESHOLD_NUMBER = 200;
 }
 
 const int ROOT_DEPTH = 0;
