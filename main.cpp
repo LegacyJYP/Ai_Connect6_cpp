@@ -20,6 +20,7 @@
 #include "Connect6Algo.h"
 #include "ai/heuristic/RuleChk.h"
 #include "test/utils/GameEndTest.h"
+#include "test/StringSequenceTest.h"
 
 using namespace std;
 
@@ -48,6 +49,8 @@ void myturn(int cnt) {
 }
 
 int main() {
+    testStringSeq();
+    testScore();
     copyBoard = getSample(1);
     myturn(1);
 

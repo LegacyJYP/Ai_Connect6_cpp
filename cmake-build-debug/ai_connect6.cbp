@@ -91,10 +91,22 @@
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/Evaluation.h">
 			<Option target="ai_connect6"/>
 		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/JYP/CountMatches.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/JYP/CountMatches.h">
+			<Option target="ai_connect6"/>
+		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/JYP/Evaluation_JYP.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/JYP/Evaluation_JYP.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/JYP/EverySequence.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/JYP/EverySequence.h">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/RuleChk.cpp">
@@ -203,6 +215,12 @@
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/Samples.h">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/StringSequenceTest.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/StringSequenceTest.h">
 			<Option target="ai_connect6"/>
 		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/test/utils/FunctionCostUtils.cpp">

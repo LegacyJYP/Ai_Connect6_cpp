@@ -4,27 +4,17 @@
 
 #include "RuleChk.h"
 #include "../../consts/GAME_BOARD.h"
+#include "JYP/Evaluation_JYP.h"
+#include "../../consts/SCORE.h"
 
 
 int isGameEnd(vector<vector<int>> board, int stoneType) {
-    for(int i=0; i<NUM_DIRECTIONS; i++) {
-        int dir[2] = {DIRECTION[i][X],
-                      DIRECTION[i][Y]};
-
-        int cnt = 0;
-        int highest = 0;
-
-//        for (int j<) {
-//
-//        }
+    double eval = evaluation_jyp(board, stoneType);
+    if(eval > GAMEEND/2) {
+        return MY_STONE;
+    } else if(eval < -GAMEEND/2) {
+        return NOT_MY_STONE;
     }
 
-
-
-
     return NONE_STONE;
-
-    return MY_STONE;
-
-    return NOT_MY_STONE;
 }

@@ -65,6 +65,7 @@ vector<vector<int>> Node::getDiffBoard() {
 }
 
 double Node::getEvaluation() {
+    bool printFlag = false;
     if(this->isEvaluated) {
 //        loginfo("Node","Node::getEvaluation","this->isEvaluated=",this->isEvaluated);
 //        return this->eval; // replace stub -> 완료
@@ -72,8 +73,8 @@ double Node::getEvaluation() {
         vector<vector<int>> board = this->getBoard();
         this->eval = evaluation(board, this->stoneType);
 //        loginfo("Node","Node::getEvaluation","this->isEvaluated=",this->isEvaluated,true);
-        loginfo("Node","Node::getEvaluation","board below", false);
-        loginfo("Node","Node::getEvaluation","this->eval=",this->eval, false);
+        loginfo("Node","Node::getEvaluation","board below", printFlag);
+        loginfo("Node","Node::getEvaluation","this->eval=",this->eval, printFlag);
 //        printBoard(board);
         this->isEvaluated = true;
     }

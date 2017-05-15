@@ -2,8 +2,6 @@
 // Created by 박재영 on 2017. 5. 13..
 //
 
-#include <vector>
-#include <string>
 #include "BoardUtils.h"
 #include <cstdlib>
 #include <iostream>
@@ -11,8 +9,6 @@
 #include "../../test/utils/PrintUtils.h"
 #include "../../test/utils/LogUtils.h"
 
-
-using namespace std;
 
 vector<vector<int>> string2board(vector<string> boardString)
 {
@@ -38,15 +34,15 @@ char itoc(int i) {
     return i+'0';
 }
 
-std::vector<std::string> board2string(std::vector<std::vector<int>> &board)
+vector<string> board2string(vector<vector<int>> &board)
 {
     int row = board.size();
     int col = board[0].size();
 
-    std::vector<std::string> boardString;
+    vector<string> boardString;
     for (int i = 0; i < row; i++)
     {
-        std::string eachLine = "";
+        string eachLine = "";
         for (int j = 0; j < col; j++)
         {
             eachLine += itoc(board[i][j]);
@@ -140,9 +136,9 @@ void fillBoardAroundPoint(vector<vector<int>>& board, int x, int y) {
     //        printBoard(board);
 }
 
-std::vector<std::vector<int>> putStonePoint(std::vector<std::vector<int>> &board, std::vector<int> &stonePoint, int stoneType)
+vector<vector<int>> putStonePoint(vector<vector<int>> &board, vector<int> &stonePoint, int stoneType)
 {
-    std::vector<std::vector<int>> result = boardClone(board);
+    vector<vector<int>> result = boardClone(board);
 
     result[stonePoint[X]][stonePoint[Y]] = stoneType;
 
@@ -150,9 +146,9 @@ std::vector<std::vector<int>> putStonePoint(std::vector<std::vector<int>> &board
 }
 
 // 2stones
-std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType)
+vector<vector<int>> putStonePoints(vector<vector<int>> &board, vector<vector<int>> &stonePoints, int stoneType)
 {
-    std::vector<std::vector<int>> result = boardClone(board);
+    vector<vector<int>> result = boardClone(board);
 
     for (auto stonePoint : stonePoints)
     {
@@ -164,9 +160,9 @@ std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &boar
 
 
 // more than 2 stones
-std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::list<std::vector<int>> &stonePoints, int stoneType)
+vector<vector<int>> putStonePoints(vector<vector<int>> &board, std::list<vector<int>> &stonePoints, int stoneType)
 {
-    std::vector<std::vector<int>> result = boardClone(board);
+    vector<vector<int>> result = boardClone(board);
 
     for (auto stonePoint : stonePoints)
     {
@@ -176,9 +172,9 @@ std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &boar
     return result;
 }
 
-std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType)
+vector<vector<int>> putStonePointsForVisualize(vector<vector<int>> &board, vector<vector<int>> &stonePoints, int stoneType)
 {
-    std::vector<std::vector<int>> result = boardClone(board);
+    vector<vector<int>> result = boardClone(board);
 
     for (auto stonePoint : stonePoints)
     {
@@ -188,8 +184,8 @@ std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector
     return result;
 }
 
-std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, list<vector<int>> &stonePoints, int stoneType) {
-    std::vector<std::vector<int>> result = boardClone(board);
+vector<vector<int>> putStonePointsForVisualize(vector<vector<int>> &board, list<vector<int>> &stonePoints, int stoneType) {
+    vector<vector<int>> result = boardClone(board);
 
     for (auto stonePoint : stonePoints)
     {
@@ -199,9 +195,9 @@ std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector
     return result;
 }
 
-std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, std::vector<std::vector<std::vector<int>>> &stonePointList, int stoneType)
+vector<vector<int>> putStonePointsForVisualize(vector<vector<int>> &board, vector<vector<vector<int>>> &stonePointList, int stoneType)
 {
-    std::vector<std::vector<int>> result = boardClone(board);
+    vector<vector<int>> result = boardClone(board);
 
     for (auto stonePoints : stonePointList)
     {
@@ -209,4 +205,124 @@ std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector
     }
 
     return result;
+}
+
+vector<string> everySequence(vector<vector<int>> board) {
+    bool printFlag = true;
+
+    vector<vector<string>> str3dArr(4);
+
+    str3dArr[0] = garo(board);
+    str3dArr[1] = sero(board);
+    str3dArr[2] = leftdowncross(board);
+    str3dArr[3] = rightdowncross(board);
+
+    vector<string> strArr(
+                    str3dArr[0].size() +
+                    str3dArr[1].size() +
+                    str3dArr[2].size() +
+                    str3dArr[3].size()
+    );
+
+    int accumulatedIdx = 0;
+    for(int i=0; i< str3dArr.size(); i++) {
+        for(int j=0; j< str3dArr[i].size(); j++) {
+            strArr[accumulatedIdx] = str3dArr[i][j];
+            accumulatedIdx++;
+        }
+    }
+
+    return strArr;
+}
+
+vector<string> garo(vector<vector<int>> board) {
+    return toStringArr(board);
+}
+
+vector<string> sero(vector<vector<int>> board) {
+    vector<vector<int>> transState = transpose(board);
+
+    return toStringArr(transState);
+}
+
+vector<vector<int>> transpose(vector<vector<int>> ori) {
+    vector<vector<int>> dup = boardClone(ori);
+
+    for (int i = 0; i < BOARD_SIZE; i++) {
+        for (int j = 0; j < BOARD_SIZE; j++) {
+            dup[j][i] = ori[i][j];
+        }
+    }
+
+    return dup;
+}
+
+vector<string> toStringArr(vector<vector<int>> board) {
+    vector<string> strArr(BOARD_SIZE);
+
+    for(int i=0; i< BOARD_SIZE; i++) {
+        string str = "";
+        str += (WALL_STONE_CHAR);
+        for(int j=0; j< BOARD_SIZE; j++) {
+            str = str + itoc(board[i][j]);
+        }
+        str = str + WALL_STONE_CHAR;
+        // System.out.println(str.toString());
+        strArr[i] = str;
+    }
+    return strArr;
+}
+
+vector<string> leftdowncross(vector<vector<int>> board) {
+    vector<string> strArr(BOARD_SIZE*2-1);
+    string str;
+
+    for (int i = 0; i < BOARD_SIZE; i++) {
+        str = WALL_STONE_CHAR;
+        for (int j = i; j >= 0; j--) {
+            str = str + itoc(board[i-j][j]);
+        }
+        str = str + WALL_STONE_CHAR;
+//            System.out.println(str);
+        strArr[i]=str;
+    }
+
+    for (int j = 1; j < BOARD_SIZE; j++) {
+        str = WALL_STONE_CHAR;
+        for (int i = 0; (j+i) < BOARD_SIZE; i++) {
+            str = str + itoc(board[j+i][BOARD_SIZE-i-1]);
+        }
+        str = str + WALL_STONE_CHAR;
+//            System.out.println(str);
+        strArr[BOARD_SIZE+j-1] = str;
+    }
+
+    return strArr;
+}
+
+vector<string> rightdowncross(vector<vector<int>> board) {
+    vector<string> strArr(BOARD_SIZE*2-1);
+    string str;
+
+    for (int i = 0; i < BOARD_SIZE; i++) {
+        str = WALL_STONE_CHAR;
+
+        for (int j = 0; (i+j) < BOARD_SIZE; j++) {
+            str = str + itoc(board[i+j][j]);
+        }
+        str = str+WALL_STONE_CHAR;
+        strArr[i] = str;
+    }
+
+    for (int j = 1; j < BOARD_SIZE; j++) {
+        str = WALL_STONE_CHAR;
+        for (int i = 0; (i+j) < BOARD_SIZE; i++) {
+            str = str + itoc(board[i][i+j]);
+        }
+        str = str+WALL_STONE_CHAR;
+
+        strArr[BOARD_SIZE+j-1] = (str);
+    }
+
+    return strArr;
 }

@@ -11,7 +11,7 @@
 
 
 double evaluation(std::vector<std::vector<int>> &board, int stoneType) {
-    bool printFlag = false;
+    bool printFlag = true;
     int winner = isGameEnd(board, NOT_MY_STONE);
     double eval;
 
