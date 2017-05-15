@@ -42,7 +42,7 @@ Node* addNode(Node* mother, vector<vector<int>> stonePair, int stoneType, int de
             pair<string, Node *> nodePair(hashKey, nodePtr);
             nodeList.insert(nodePair);
 
-            loginfo("NodeListMap","Node* ","nodeList.insert, size=",nodeList.size());
+//            loginfo("NodeListMap","Node* ","nodeList.insert, size=",nodeList.size());
         }
 
     return nodePtr;

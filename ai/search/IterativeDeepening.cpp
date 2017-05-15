@@ -53,11 +53,11 @@ void iterativeDeepeningSearch(vector<vector<int>> board, int stoneType, int cnt,
         x[1] = stonePair[1][X];y[1] = stonePair[1][Y];
 
         vector<vector<int>> bestBoard = bestNode->getDiffBoard();
-        loginfo("IterativeDeepening","bestBoard below", true);
         vector<vector<int>> stones = bestNode->getStones();
-        loginfo("IterativeDeepening","bestBoard stones", true);
-        printStonePair(stones);
-        printBoard(bestBoard);
+        loginfo("IterativeDeepening","bestBoard stones", false);
+//        printStonePair(stones);
+        loginfo("IterativeDeepening","bestBoard below", false);
+//        printBoard(bestBoard);
         targetDepth++;
         if(targetDepth > ITERATIVE_DEEPENING_SEARCH::MAXIMUM_DEPTH) {
             break;

@@ -30,12 +30,12 @@ void myturn(int cnt) {
 
     int x[2], y[2];
 
-    loginfo("copyBoard=");
-    printBoard(copyBoard);
+//    loginfo("copyBoard=");
+//    printBoard(copyBoard);
 
-    tic();
+//    tic();
     iterativeDeepeningSearch(copyBoard, stoneType, cnt, x,y);
-    printToc();
+//    printToc();
 
     for(int i=0; i < cnt ;i++) {
         loginfo("myturn","result","*x=",*(x+i));

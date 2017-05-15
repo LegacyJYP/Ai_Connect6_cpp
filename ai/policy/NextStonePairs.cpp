@@ -30,7 +30,7 @@ vector<vector<vector<int>>> nextStonePairsByPolicy(vector<vector<int>> board, in
 
     vector<vector<vector<int>>> filteredStonePairs = stonePoints2stonePairs(filteredStoneList);
 
-    loginfo("NextStonePairs","filteredStonePairs","filteredStonePairs.size()=",filteredStonePairs.size());
+    loginfo("NextStonePairs","filteredStonePairs","filteredStonePairs.size()=",filteredStonePairs.size(),false);
 //    for (auto stonePair: filteredStonePairs) {
 //        loginfo("NextStonePairs","nextStonePairsByPolicy","policy result");
 //        loginfo("NextStonePairs", "stonepairSize", stonePair.size());
