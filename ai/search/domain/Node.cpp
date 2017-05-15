@@ -172,10 +172,12 @@ vector<vector<vector<int>>> Node::getAllStones() {
 }
 
 Node* getOrCreateRoot(vector<vector<int>> board, int stoneType) {
+    bool printFlag = false;
+
     if (ROOT_PTR  == nullptr) {
         int nTurns = 0; // 흑이든 백이든 일단 0부터 시작.
         ROOT_PTR  = addNode(board,ENEMY_STONE(stoneType),nTurns);
-        loginfo("Node","getOrCreateRoot","rootPtr isNull, createRoot");
+        loginfo("Node","getOrCreateRoot","rootPtr isNull, createRoot", printFlag );
     } else {
         int nTurns = ROOT_PTR->getnTurns()+2;
         free(ROOT_PTR);
@@ -184,7 +186,7 @@ Node* getOrCreateRoot(vector<vector<int>> board, int stoneType) {
         removeNodes(nTurns-1);
 
         ROOT_PTR  = addNode(board, ENEMY_STONE(stoneType), nTurns);
-        loginfo("Node","getOrCreateRoot","rootPtr notNull");
+        loginfo("Node","getOrCreateRoot","rootPtr notNull",printFlag);
     }
 
     return ROOT_PTR ;

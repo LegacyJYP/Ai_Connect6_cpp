@@ -39,6 +39,6 @@ const int DIRECTION[4][2] =
 const int MY_STONE_LIST = 0;
 const int NOT_MY_STONE_LIST = 1;
 
-
+const int RANDOM_CENTER = 10;
 #endif //AI_CONNECT6_GAME_BOARD_H
 

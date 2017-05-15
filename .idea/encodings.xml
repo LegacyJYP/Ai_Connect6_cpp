@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Ai_Algorithm_Code.cpp" charset="EUC-KR" />
     <file url="file://$PROJECT_DIR$/Connect6Algo.cpp" charset="EUC-KR" />
     <file url="file://$PROJECT_DIR$/Connect6Algo.h" charset="EUC-KR" />
-    <file url="file://$PROJECT_DIR$/GivenMain.cpp" charset="EUC-KR" />
   </component>
 </project>

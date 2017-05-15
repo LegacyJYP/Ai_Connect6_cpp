@@ -16,4 +16,5 @@ void tic(string key);
 double toc();
 double toc(string key);
 void printToc();
+void printToc(bool printFlag);
 void printToc(string key);

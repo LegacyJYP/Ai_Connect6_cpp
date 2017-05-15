@@ -18,6 +18,8 @@
 #include "test/MinimaxTest.h"
 #include "ai/heuristic/Evaluation.h"
 #include "Connect6Algo.h"
+#include "ai/heuristic/RuleChk.h"
+#include "test/utils/GameEndTest.h"
 
 using namespace std;
 
@@ -27,34 +29,35 @@ vector<vector<int>> copyBoard;
 int stoneType = BLACK_STONE;
 
 void myturn(int cnt) {
-
+    bool printFlag = false;
     int x[2], y[2];
 
-//    loginfo("copyBoard=");
-//    printBoard(copyBoard);
+    loginfo("copyBoard=", printFlag);
+    printBoard(copyBoard, printFlag);
 
-//    tic();
+    tic();
     iterativeDeepeningSearch(copyBoard, stoneType, cnt, x,y);
-//    printToc();
+    printToc(printFlag);
 
     for(int i=0; i < cnt ;i++) {
-        loginfo("myturn","result","*x=",*(x+i));
-        loginfo("myturn","result","*y=",*(y+i));
+        loginfo("main","myturn","i=",i,printFlag);
+        loginfo("main","result","*x=",*(x+i),printFlag);
+        loginfo("main","result","*y=",*(y+i),printFlag);
     }
 
 }
 
 int main() {
-//    copyBoard = getSample(0);
-//    myturn(1);
-//    copyBoard = getSample(1);
-//    myturn(2);
-////
-//    copyBoard = getSample(2);
-//    myturn(2);
-//
-//    copyBoard = getSample(3);
-//    myturn(2);
+    copyBoard = getSample(1);
+    myturn(1);
+
+    myturn(2);
+
+    copyBoard = getSample(2);
+    myturn(2);
+
+    copyBoard = getSample(3);
+    myturn(2);
 
     copyBoard = getSample(4);
     myturn(2);

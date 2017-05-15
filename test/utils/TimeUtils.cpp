@@ -56,6 +56,12 @@ void printToc() {
     loginfo("printToc",toc());
 }
 
+void printToc(bool printFlag) {
+    if(printFlag) {
+        loginfo("printToc", toc());
+    }
+}
+
 void printToc(string key) {
     loginfo("printToc key ", toc(key));
 }

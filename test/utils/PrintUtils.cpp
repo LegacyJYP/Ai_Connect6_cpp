@@ -12,10 +12,19 @@
 
 
 void printBoard(vector<vector<int>> &board) {
-    loginfo("printBoard");
-    vector<string> boardString = board2string(board);
+        loginfo("printBoard");
+        vector<string> boardString = board2string(board);
 
-    printStringList(boardString);
+        printStringList(boardString);
+}
+
+void printBoard(vector<vector<int>> &board, bool printFlag) {
+    if(printFlag) {
+        loginfo("printBoard");
+        vector<string> boardString = board2string(board);
+
+        printStringList(boardString);
+    }
 }
 
 void printStringList(vector<string> &boardString)
@@ -32,6 +41,9 @@ void printStonePairList(list<vector<vector<int>>> &stonePairsList) {
             printStonePair(*i);
         }
 }
+void printStonePairList(list<vector<vector<int>>> &stonePairsList, bool printFlag) {
+
+}
 
 void printStonePairList(vector<vector<vector<int>>> &stonePairs) {
     vector<vector<vector<int>>>::iterator i;
@@ -40,10 +52,22 @@ void printStonePairList(vector<vector<vector<int>>> &stonePairs) {
     }
 }
 
+void printStonePairList(vector<vector<vector<int>>> &stonePairsList, bool printFlag) {
+
+}
+
 void printStonePair(vector<vector<int>> &stonePairs) {
     for (int i = 0; i < stonePairs.size(); i++)
     {
         printStonePoint(stonePairs[i]);
+    }
+}
+
+void printStonePair(vector<vector<int>> &stonePairs, bool printFlag) {
+    if(printFlag) {
+        for (int i = 0; i < stonePairs.size(); i++) {
+            printStonePoint(stonePairs[i]);
+        }
     }
 }
 

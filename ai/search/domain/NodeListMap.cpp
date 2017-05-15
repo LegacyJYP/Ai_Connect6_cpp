@@ -49,13 +49,15 @@ Node* addNode(Node* mother, vector<vector<int>> stonePair, int stoneType, int de
 }
 
 void removeNodes(int nTurns) {
+    bool printFlag = false;
+
     Node* nodePtr;
 
     map<string, Node *> nodeList;
 
     map<int,map<string,Node*>>::iterator it = NODE_LIST_MAP->find(nTurns);
     if(it == NODE_LIST_MAP->end()){ // not exist depthmap
-        loginfo("NodeListMap","remoteNodes","not exist depthmap");
+        loginfo("NodeListMap","remoteNodes","not exist depthmap",printFlag);
     }
     else {
         nodeList = it->second;
@@ -68,6 +70,8 @@ void removeNodes(int nTurns) {
 }
 
 Node* addNode(vector<vector<int>> board, int stoneType,int nTurns) { // root change
+    bool printFlag = false;
+
     Node* nodePtr;
 
     map<string, Node *> nodeList;
@@ -86,7 +90,6 @@ Node* addNode(vector<vector<int>> board, int stoneType,int nTurns) { // root cha
     map<string,Node*>::iterator jt = nodeList.find(hashKey);
     // todo findByBoard()
     if(jt != nodeList.end()) { // exist hashKey
-        free(nodePtr);
         nodePtr = jt->second; // existNode
     } else
     {
@@ -94,7 +97,7 @@ Node* addNode(vector<vector<int>> board, int stoneType,int nTurns) { // root cha
         pair<string, Node *> nodePair(hashKey, nodePtr);
         nodeList.insert(nodePair);
 
-        loginfo("NodeListMap","Node* ","nodeList.insert, size=",nodeList.size());
+        loginfo("NodeListMap","Node* ","nodeList.insert, size=",nodeList.size(), printFlag);
     }
 
     return nodePtr;
