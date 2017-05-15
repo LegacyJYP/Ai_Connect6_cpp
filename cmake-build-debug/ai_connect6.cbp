@@ -97,6 +97,12 @@
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/JYP/Evaluation_JYP.h">
 			<Option target="ai_connect6"/>
 		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/RuleChk.cpp">
+			<Option target="ai_connect6"/>
+		</Unit>
+		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/RuleChk.h">
+			<Option target="ai_connect6"/>
+		</Unit>
 		<Unit filename="/Users/jaeyoung/Google 드라이브/Yeap/Jaeyoung/ai_connect6/ai/heuristic/onefile/Evaluation_ONEFILE.cpp">
 			<Option target="ai_connect6"/>
 		</Unit>

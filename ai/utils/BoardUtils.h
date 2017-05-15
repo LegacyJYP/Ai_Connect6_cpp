@@ -27,4 +27,6 @@ std::vector<std::vector<int>> putStonePoint(std::vector<std::vector<int>> &board
 std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType);
 std::vector<std::vector<int>> putStonePoints(std::vector<std::vector<int>> &board, std::list<std::vector<int>> &stonePoints, int stoneType);
 std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, std::vector<std::vector<int>> &stonePoints, int stoneType);
+std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, list<vector<int>> &stonePoints, int stoneType);
+std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, std::vector<std::vector<std::vector<int>>> &stonePoints, int stoneType);
 #endif //AI_CONNECT6_BOARDUTILS_H

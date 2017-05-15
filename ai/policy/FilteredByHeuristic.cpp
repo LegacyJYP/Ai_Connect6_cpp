@@ -16,15 +16,20 @@ vector<vector<int>> filterByHeuristic(vector<vector<int>> board, list<vector<int
     vector<double> evalList;
 
     for (auto stonePoint : effectiveList) {
-//        loginfo("FilteredByHeuristic","afterBoard","putStone");
 
         vector<vector<int>> afterBoard = putStonePoint(board,stonePoint,stoneType);
-//        printStonePoint(stonePoint);
-//        printBoard(afterBoard);
 
         double eval = evaluation(afterBoard, stoneType);
         evalList.push_back(eval); // todo 메모리 leak 확인
-//        loginfo("FilteredByHeuristic","filterByHeuristic","eval=",eval);
+
+        bool printFlag = false;
+        loginfo("",printFlag );
+        loginfo("FilteredByHeuristic","filterByHeuristic","eval=",eval,printFlag );
+//        printStonePoint(stonePoint);
+        loginfo("FilteredByHeuristic","filterByHeuristic","eval=",eval,printFlag );
+        loginfo("FilteredByHeuristic","afterBoard","putStone",printFlag );
+//        printBoard(afterBoard);
+        loginfo("",printFlag );
     }
 
     vector<int> sortedIdx = sortAndReturnIdx(evalList); // todo 상위 구하고 정렬 멈추기

@@ -187,3 +187,26 @@ std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector
 
     return result;
 }
+
+std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, list<vector<int>> &stonePoints, int stoneType) {
+    std::vector<std::vector<int>> result = boardClone(board);
+
+    for (auto stonePoint : stonePoints)
+    {
+        result[stonePoint[X]][stonePoint[Y]] = stoneType+4;
+    }
+
+    return result;
+}
+
+std::vector<std::vector<int>> putStonePointsForVisualize(std::vector<std::vector<int>> &board, std::vector<std::vector<std::vector<int>>> &stonePointList, int stoneType)
+{
+    std::vector<std::vector<int>> result = boardClone(board);
+
+    for (auto stonePoints : stonePointList)
+    {
+        result = putStonePointsForVisualize(result, stonePoints, stoneType);
+    }
+
+    return result;
+}

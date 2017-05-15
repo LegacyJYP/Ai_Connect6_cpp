@@ -23,22 +23,48 @@ using namespace std;
 
 void testCountAndElapsedTime();
 
+vector<vector<int>> copyBoard;
+int stoneType = BLACK_STONE;
 
 void myturn(int cnt) {
-    vector<vector<int>> board = getSample(0);
-    int stoneType = BLACK_STONE;
-//    loginfo("hi");
 
-    int x[2];
-    int y[2];
-    iterativeDeepeningSearch(board, stoneType, 2, x,y);
+    int x[2], y[2];
+
+    loginfo("copyBoard=");
+    printBoard(copyBoard);
+
+    tic();
+    iterativeDeepeningSearch(copyBoard, stoneType, cnt, x,y);
+    printToc();
+
+    for(int i=0; i < cnt ;i++) {
+        loginfo("myturn","result","*x=",*(x+i));
+        loginfo("myturn","result","*y=",*(y+i));
+    }
+
 }
 
 int main() {
-    myturn(2);
+//    copyBoard = getSample(0);
+//    myturn(1);
+//    copyBoard = getSample(1);
+//    myturn(2);
+////
+//    copyBoard = getSample(2);
+//    myturn(2);
+//
+//    copyBoard = getSample(3);
+//    myturn(2);
+
+    copyBoard = getSample(4);
     myturn(2);
 
-//
+//    tic();
+
+
+
+
+
 //    double eval = evaluation(board, BLACK_STONE);
 //    printBoard(board);
 //    loginfo("main","main","eval=",eval); // eval 단독테스트

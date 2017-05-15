@@ -6,11 +6,20 @@
 #include "../../test/utils/LogUtils.h"
 #include "../policy/NextStonePairs.h"
 #include "../../test/utils/PrintUtils.h"
+#include "../../consts/SCORE.h"
+#include "../../consts/GAME_BOARD.h"
 
 
 void NodeExtend(Node* node, int targetDepth) {
     if (!node->isExtended()) { // todo Extend More
-        vector<vector<vector<int>>> nextStonePairs = nextStonePairsByPolicy(node->getBoard(), node->getStoneType());
+        if(node->getEvaluation() > GAMEEND/2) {
+            // nope
+            loginfo("NodeExtend","vector<vector<vector<int>>>","eval > GAMEEND/2 -> size=0으로 확장");
+            node->extend(vector<vector<vector<int>>>(0));
+            return;
+        }
+
+        vector<vector<vector<int>>> nextStonePairs = nextStonePairsByPolicy(node->getBoard(), ENEMY_STONE(node->getStoneType()));
 //        loginfo("IterativeDeepening", "iterativeDeepeningSearch", "extend");
 //        loginfo("IterativeDeepening", "iterativeDeepeningSearch", "stonePairList below");
 //        printStonePairList(nextStonePairs);

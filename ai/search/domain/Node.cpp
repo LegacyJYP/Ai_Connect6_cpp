@@ -10,8 +10,9 @@
 #include "../../../test/Samples.h"
 #include "../../utils/BoardUtils.h"
 #include "../../heuristic/Evaluation.h"
+#include "NodeListMap.h"
 
-Node* ROOTPTR = nullptr;
+Node* ROOT_PTR = nullptr;
 
 void Node::extend(vector<vector<vector<int>>> stonePairs) {
     loginfo("Node","Node::extend", false);
@@ -23,11 +24,9 @@ void Node::extend(vector<vector<vector<int>>> stonePairs) {
 //        printStonePair(stonePair);
     }
 
-    int len = stonePairs.size();
-    loginfo("Node","Node::extend","len=",len);
-    if (len > 0) {
-        this->extended = true;
-    }
+//    int len = stonePairs.size();
+//    loginfo("Node","Node::extend","len=",len);
+    this->extended = true;
 }
 
 void Node::addChild(Node *child) {
@@ -70,13 +69,15 @@ double Node::getEvaluation() {
 //        loginfo("Node","Node::getEvaluation","this->isEvaluated=",this->isEvaluated);
 //        return this->eval; // replace stub -> 완료
     } else {
-//        loginfo("Node","Node::getEvaluation","this->isEvaluated=",this->isEvaluated);
         vector<vector<int>> board = this->getBoard();
         this->eval = evaluation(board, this->stoneType);
+//        loginfo("Node","Node::getEvaluation","this->isEvaluated=",this->isEvaluated,true);
+        loginfo("Node","Node::getEvaluation","board below", false);
+        loginfo("Node","Node::getEvaluation","this->eval=",this->eval, false);
+//        printBoard(board);
         this->isEvaluated = true;
     }
 
-//    loginfo("Node","Node::getEvaluation","this->eval=",this->eval);
     return this->eval;
 }
 
@@ -84,8 +85,8 @@ Node* Node::getMother() {
     return this->mother;
 }
 
-int Node::getDepth() {
-    return this->depth;
+int Node::getnTurns() {
+    return this->nTurns;
 }
 
 int Node::getStoneType() {
@@ -125,18 +126,68 @@ void Node::setState(vector<vector<int>> board, bool isRoot) {
     }
 }
 
+string Node::getHashKey() {
+    vector<vector<vector<int>>> stoneList = this->getAllStones();
+    vector<vector<int>> myStones = stoneList[0];
+    vector<vector<int>> notMyStones = stoneList[1];
+
+
+    for(auto stone : stoneList[0]) { // MY_STONE
+
+    }
+    for(auto stone : stoneList[1]) { // NOT_MY_STONE
+        stone;
+    }
+}
+
+vector<vector<vector<int>>> Node::getAllStones() {
+    Node* node = this;
+    vector<vector<vector<int>>> stoneList(2);
+
+    if(node->isRoot) {
+        return vector<vector<vector<int>>>(2);
+    }
+
+    while(true) {
+        if (node->getStoneType() == MY_STONE) {
+            stoneList[MY_STONE_LIST].push_back(node->getStones()[0]);
+            stoneList[MY_STONE_LIST].push_back(node->getStones()[1]);
+        } else {
+            stoneList[NOT_MY_STONE_LIST].push_back(node->getStones()[0]);
+            stoneList[NOT_MY_STONE_LIST].push_back(node->getStones()[1]);
+        }
+        if(node->getMother()->isRoot) {
+            break;
+        } else {
+            node = node->getMother();
+        }
+    }
+
+    loginfo("Node","Node::getAllStones","stoneList[MY_STONE] below");
+    printStonePointList(stoneList[0]);
+    loginfo("Node","Node::getAllStones","stoneList[NOT_MY_STONE] below");
+    printStonePointList(stoneList[1]);
+
+    return stoneList;
+}
+
 Node* getOrCreateRoot(vector<vector<int>> board, int stoneType) {
-    int depth =0;
-    if (ROOTPTR == nullptr) {
-        ROOTPTR = new Node(board,ENEMY_STONE(stoneType),depth);
+    if (ROOT_PTR  == nullptr) {
+        int nTurns = 0; // 흑이든 백이든 일단 0부터 시작.
+        ROOT_PTR  = addNode(board,ENEMY_STONE(stoneType),nTurns);
         loginfo("Node","getOrCreateRoot","rootPtr isNull, createRoot");
     } else {
-        free(ROOTPTR);
-        ROOTPTR = new Node(board, ENEMY_STONE(stoneType), depth);
+        int nTurns = ROOT_PTR->getnTurns()+2;
+        free(ROOT_PTR);
+
+        removeNodes(nTurns-2);
+        removeNodes(nTurns-1);
+
+        ROOT_PTR  = addNode(board, ENEMY_STONE(stoneType), nTurns);
         loginfo("Node","getOrCreateRoot","rootPtr notNull");
     }
 
-    return ROOTPTR;
+    return ROOT_PTR ;
 }
 
 //string hashKey = stonePair;

@@ -21,7 +21,7 @@ private:
     bool isRoot;
     vector<vector<int>> stonePair;
     int stoneType;
-    int depth;
+    int nTurns;
     double eval;
     bool isEvaluated=false;
     vector<vector<int>> board;
@@ -31,15 +31,15 @@ public:
     Node(double eval) : eval(eval), extended(true) {}; // for test todo remote
     Node(double eval, bool isRoot) : eval(eval), isRoot(isRoot), extended(true) {}; // for test todo remote
 
-    Node(vector<vector<int>> board, int stoneType, int depth) : isRoot(true), extended(false),
-                                                                stoneType(stoneType), depth(depth)
+    Node(vector<vector<int>> board, int stoneType, int nTurns) : isRoot(true), extended(false),
+                                                                stoneType(stoneType), nTurns(nTurns)
     {
         setState(board, true);
     };
 
     Node(Node* node, vector<vector<int>> stonePair) : isRoot(false), mother(node),
                                                       extended(false), stonePair(stonePair),
-                                                      depth(getMother()->getDepth()+1)
+                                                      nTurns(getMother()->getnTurns()+1)
     {
         setState(stonePair);
         setStoneTypeByMother();
@@ -49,11 +49,13 @@ public:
     void addChild(Node* child);
     Node* getMother();
     list<Node*> getChildren();
-    int getDepth();
+    int getnTurns();
     vector<vector<int>> getStones();
+    string getHashKey();
     vector<vector<int>> getBoard();
     vector<vector<int>> getDiffBoard();
     int getStoneType();
+    vector<vector<vector<int>>> getAllStones();
     void setState(vector<vector<int>> stonePair);
     void setState(vector<vector<int>> board, bool isRoot);
     double getEvaluation();

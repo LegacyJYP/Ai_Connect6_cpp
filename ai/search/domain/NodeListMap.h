@@ -12,3 +12,6 @@
 using namespace std;
 
 
+Node* addNode(Node* mother, vector<vector<int>> stonePair, int stoneType, int nTurns);
+Node* addNode(vector<vector<int>> board, int stoneType,int nTurns);
+void removeNodes(int nTurns);

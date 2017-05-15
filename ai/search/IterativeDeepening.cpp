@@ -14,15 +14,25 @@
 #include "Minimax.h"
 #include "../../consts/SCORE.h"
 #include "NodeExtend.h"
-
+#include "../../Connect6Algo.h"
 
 
 void iterativeDeepeningSearch(vector<vector<int>> board, int stoneType, int cnt, int x[], int y[]) {
-    printBoard(board);
-
     if(cnt == 1) {
-        *x = {5};
-        *y = {5};
+        srand((unsigned)time(NULL));
+
+        for (int i = 0; i < cnt; i++) {
+            while(true) {
+                x[i] = rand() % BOARD_SIZE;
+                y[i] = rand() % BOARD_SIZE;
+
+                if(board[x[i]][y[i]] == NONE_STONE ) {
+                    break;
+                }
+            }
+
+            if (x[1] == x[0] && y[1] == y[0]) i--;
+        }
         return;
     }
 
